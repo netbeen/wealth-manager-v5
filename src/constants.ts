@@ -6,3 +6,5 @@ export enum HTTP_METHOD {
     PATCH= 'PATCH',
     HEAD= 'HEAD',
 };
+
+export const SESSION_TOKEN_COOKIE_NAME = 'wealthManagerSessionV5';

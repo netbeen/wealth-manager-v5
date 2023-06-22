@@ -9,3 +9,7 @@ export const response200 = (res: NextApiResponse, data: any) => {
 export const response400 = (res: NextApiResponse, errorMessage: string) => {
     res.status(StatusCodes.BAD_REQUEST).json({ errorMessage })
 }
+
+export const response403 = (res: NextApiResponse, errorMessage: string) => {
+    res.status(StatusCodes.FORBIDDEN).json({ errorMessage })
+}
