@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next'
 import prisma from '../../../../lib/prisma';
 import {getValueFromQuery} from "@/utils";
 
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     const username = getValueFromQuery(req, 'username')
     const password = getValueFromQuery(req, 'password')
