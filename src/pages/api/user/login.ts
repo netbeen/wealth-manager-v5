@@ -23,6 +23,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     expiresIn: '7d',
                 })
             });
+            return;
         }
     }
     response403(res, '用户名或密码错误')
