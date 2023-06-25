@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
                 expiresIn: '1d',
             }), {
                 httpOnly: true,
-                expires: Date.now() + 3600 * 24
+                expires: Date.now() + 1000 * 3600 * 24
             })
             return res;
         }
