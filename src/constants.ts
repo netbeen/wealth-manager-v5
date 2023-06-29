@@ -8,3 +8,4 @@ export enum HTTP_METHOD {
 };
 
 export const SESSION_TOKEN_COOKIE_NAME = 'wealthManagerSessionV5';
+export const TEAM_COOKIE_NAME = 'wealthManagerTeam';
