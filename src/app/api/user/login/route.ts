@@ -5,20 +5,21 @@ import {
     StatusCodes,
 } from 'http-status-codes';
 import {SESSION_TOKEN_COOKIE_NAME} from "@/constants";
+import {usingMiddleware} from "@/utils/serverCommon";
 
-export async function POST(req: NextRequest) {
+async function handler(req: NextRequest) {
     const {username, password} = await req.json();
     if(username && password){
         const targetUser = await prisma.user.findFirst({
             where: {
-                username: username,
+                name: username,
                 password: password,
             },
         });
         if(targetUser){
             const res = NextResponse.json({
                 ...targetUser,
-                password: null,
+                password: '',
             });
             res.cookies.set(SESSION_TOKEN_COOKIE_NAME, jwt.sign({ userId: targetUser.id }, process.env.JWT_SECRET ?? '', {
                 expiresIn: '1d',
@@ -29,9 +30,7 @@ export async function POST(req: NextRequest) {
             return res;
         }
     }
-    return NextResponse.json({
-        errorMessage: '用户名或密码错误'
-    }, {
-        status: StatusCodes.FORBIDDEN
-    })
+    throw new Error('用户名或密码错误')
 }
+
+export const POST = usingMiddleware(handler);

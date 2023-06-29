@@ -1,13 +1,13 @@
 import jwt from "jsonwebtoken";
+import {User} from ".prisma/client/index";
 import prisma from "../../lib/prisma";
 
-export const getLoginUserByJwtToken = async (jwtToken?: string) => {
+export const getLoginUserByJwtToken: (jwtToken?: string)=>Promise<User|null> = async (jwtToken) => {
     if(!jwtToken){
         return null;
     }
     const decodedJwt = jwt.verify(jwtToken, process.env.JWT_SECRET ?? '');
-    // @ts-ignore
-    const userId = decodedJwt.userId
+    const {userId} = decodedJwt as {userId: string}
     const targetUser = await prisma.user.findFirst({
         where: {
             id: userId,
@@ -18,7 +18,7 @@ export const getLoginUserByJwtToken = async (jwtToken?: string) => {
     }else{
         return {
             ...targetUser,
-            password: null,
-        }
+            password: '',
+        } as User
     }
 };

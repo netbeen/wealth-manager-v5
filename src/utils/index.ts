@@ -1,6 +1,3 @@
-// import {NextApiRequest, NextApiResponse} from "next";
-// import {HTTP_METHOD} from "@/constants";
-// import {response400} from "@/utils/response";
 // @ts-ignore
 import {Toast} from "antd-mobile/bundle/antd-mobile.cjs";
 
@@ -17,4 +14,3 @@ export const toastSuccess = (content: string) => {
         content,
     });
 };
-
