@@ -1,9 +1,9 @@
-import {NextRequest, NextResponse} from "next/server";
-import {usingMiddleware} from "@/utils/serverCommon";
-import {User, Team} from ".prisma/client/index";
+import { NextRequest, NextResponse } from 'next/server'
+import { usingMiddleware } from '@/utils/serverCommon'
+import { User } from '@/utils/user'
 
-async function handler(req: NextRequest, user?: User, team?: Team) {
-    return NextResponse.json(user);
+async function handler(req: NextRequest, user?: User) {
+  return NextResponse.json(user)
 }
 
-export const GET = usingMiddleware(handler);
+export const GET = usingMiddleware(handler)
