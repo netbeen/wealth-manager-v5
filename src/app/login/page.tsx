@@ -7,11 +7,21 @@ import 'antd-mobile/bundle/style.css'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import { Button, Form, Input } from 'antd-mobile/bundle/antd-mobile.cjs'
-import { Fragment, useCallback } from 'react'
+import { Fragment, useCallback, useEffect } from 'react'
 import { HTTP_METHOD, PAGE_AFTER_LOGIN } from '@/constants'
 
 export default function Page() {
   const router = useRouter()
+
+  const { loading: meLoading, data: meData } = useRequest(() =>
+    fetch('/api/user/me')
+  )
+  useEffect(() => {
+    if (!meLoading && meData?.ok) {
+      toastSuccess('Session有效，无需重新登录')
+      router.push(PAGE_AFTER_LOGIN)
+    }
+  }, [meLoading, meData])
 
   const { loading, runAsync: runAsyncLogin } = useRequest(
     (username, password) =>
