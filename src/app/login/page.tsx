@@ -8,7 +8,7 @@ import 'antd-mobile/bundle/style.css'
 // @ts-ignore
 import { Button, Form, Input } from 'antd-mobile/bundle/antd-mobile.cjs'
 import { Fragment, useCallback } from 'react'
-import { HTTP_METHOD } from '@/constants'
+import { HTTP_METHOD, PAGE_AFTER_LOGIN } from '@/constants'
 
 export default function Page() {
   const router = useRouter()
@@ -33,13 +33,8 @@ export default function Page() {
       toastFail('用户名或密码错误')
       return
     }
-    // cookies.set(SESSION_TOKEN_COOKIE_NAME, (await loginResponse.json()).jwtToken, { expires: 3 });
-
-    // const availableOrganizationsResult = await fetchAvailableOrganizations();
-    // cookies.set(ORGANIZATION_COOKIE_NAME, availableOrganizationsResult[0]._id, { expires: 6 });
-    // await caches.delete('wm-runtime-v2');
     toastSuccess('登录成功')
-    await router.push('/about')
+    await router.push(PAGE_AFTER_LOGIN)
   }, [])
 
   return (
