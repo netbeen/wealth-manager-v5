@@ -89,7 +89,7 @@ export default function Page() {
         onClose={() => {
           setTeamPickerVisible(false)
         }}
-        onConfirm={async (pickedNames, d) => {
+        onConfirm={async (pickedNames) => {
           if (!pickedNames || !pickedNames[0]) {
             return
           }
