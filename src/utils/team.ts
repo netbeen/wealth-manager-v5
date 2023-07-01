@@ -1,7 +1,10 @@
-import prisma from '@@/lib/prisma'
+import prismaClient from '@@/lib/prismaClient'
+import { Team as PrismaTeam } from '.prisma/client/index'
+
+export type Team = PrismaTeam
 
 export const listTeamByUserId = async (userId: string) => {
-  return await prisma.team.findMany({
+  return (await prismaClient.team.findMany({
     where: {
       OR: [
         {
@@ -21,5 +24,5 @@ export const listTeamByUserId = async (userId: string) => {
         },
       ],
     },
-  })
+  })) as Team[]
 }

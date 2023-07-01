@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken'
 import { User as PrismaUser } from '.prisma/client/index'
-import prisma from '../../lib/prisma'
+import prismaClient from '../../lib/prismaClient'
 
 export type User = PrismaUser
 export const desensitizeUser: (input: User) => User = (input) => {
@@ -18,7 +18,7 @@ export const getLoginUserByJwtToken: (
   }
   const decodedJwt = jwt.verify(jwtToken, process.env.JWT_SECRET ?? '')
   const { userId } = decodedJwt as { userId: string }
-  const targetUser = await prisma.user.findFirst({
+  const targetUser = await prismaClient.user.findFirst({
     where: {
       id: userId,
     },

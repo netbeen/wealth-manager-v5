@@ -1,4 +1,4 @@
-import prisma from '../../../../../lib/prisma'
+import prismaClient from '../../../../../lib/prismaClient'
 import jwt from 'jsonwebtoken'
 import { NextRequest, NextResponse } from 'next/server'
 import { SESSION_TOKEN_COOKIE_NAME, TEAM_COOKIE_NAME } from '@/constants'
@@ -11,7 +11,7 @@ async function handler(req: NextRequest) {
   if (!username || !password) {
     throw new Error('用户名和密码必填')
   }
-  const targetUser = await prisma.user.findFirst({
+  const targetUser = await prismaClient.user.findFirst({
     where: {
       name: username,
       password: password,

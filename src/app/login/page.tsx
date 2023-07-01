@@ -70,7 +70,7 @@ export default function Page() {
           <Fragment>
             <Button
               className="mb-1"
-              loading={loading}
+              loading={loading || meLoading}
               block
               type="submit"
               color="primary"
@@ -79,6 +79,7 @@ export default function Page() {
               登录
             </Button>
             <Button
+              loading={meLoading}
               className="mb-1"
               block
               size="large"
@@ -93,7 +94,7 @@ export default function Page() {
               className="mb-1"
               block
               size="large"
-              loading={loading}
+              loading={loading || meLoading}
               onClick={async () => {
                 await doLogin('访客', 'visitorHash')
               }}
