@@ -74,8 +74,7 @@ export default function RootLayout({
             </div>
             <TabBar
               activeKey={
-                tabs.find((item) => location.pathname.includes(item.key))
-                  ?.key ?? ''
+                tabs.find((item) => pathname.includes(item.key))?.key ?? ''
               }
               onChange={(selectedKey) => {
                 router.push(

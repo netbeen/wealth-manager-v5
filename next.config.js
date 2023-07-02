@@ -17,6 +17,7 @@ const nextConfig = {
   },
   experimental: {
     typedRoutes: true,
+    esmExternals: 'loose',
   },
 }
 

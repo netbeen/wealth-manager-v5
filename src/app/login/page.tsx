@@ -1,7 +1,7 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
-import { toastFail, toastSuccess } from '@/utils'
+import { toastFail, toastSuccess } from '@/utils/UICommon'
 import { useRequest } from 'ahooks'
 import 'antd-mobile/bundle/style.css'
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
