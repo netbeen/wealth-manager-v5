@@ -31,6 +31,7 @@ import {
   FundDividendType,
   FundPriceType,
   fundSecondaryTabData,
+  FundSpitType,
 } from '@/utils/UICommon'
 import { useRouter } from 'next/navigation'
 import { Overview } from '@/components/Overview'
