@@ -71,7 +71,7 @@ export async function kvSet<T>(
     key,
     {
       ...value,
-      kvUpdatedAt: new Date().toLocaleString(),
+      kvUpdatedAt: new Date().toString(),
       kvHit: true,
     },
     { ex }
