@@ -8,9 +8,14 @@ import prismaClient from '@@/lib/prismaClient'
 const pathWithoutAuthentication = ['/api/user/login']
 
 export const usingMiddleware = (
-  handler: (req: NextRequest, user?: User, team?: Team) => Promise<NextResponse>
+  handler: (
+    req: NextRequest,
+    params: any,
+    user?: User,
+    team?: Team
+  ) => Promise<NextResponse>
 ) => {
-  return async function (req: NextRequest) {
+  return async function (req: NextRequest, params: any) {
     let user: User | undefined = undefined
     if (!pathWithoutAuthentication.includes(new URL(req.url).pathname)) {
       const jwtToken = req.cookies.get(SESSION_TOKEN_COOKIE_NAME)?.value
@@ -39,7 +44,7 @@ export const usingMiddleware = (
     }
 
     try {
-      return await handler(req, user, team)
+      return await handler(req, params, user, team)
     } catch (e) {
       console.error('Error', e)
       return NextResponse.json(

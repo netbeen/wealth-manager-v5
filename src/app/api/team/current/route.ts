@@ -3,7 +3,12 @@ import { usingMiddleware } from '@/utils/serverCommon'
 import { Team } from '@/utils/team'
 import { User } from '@/utils/user'
 
-async function handler(req: NextRequest, user?: User, team?: Team) {
+async function handler(
+  req: NextRequest,
+  params: any,
+  user?: User,
+  team?: Team
+) {
   return NextResponse.json(team)
 }
 
