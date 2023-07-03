@@ -84,7 +84,7 @@ export default function Page() {
               block
               size="large"
               onClick={async () => {
-                await router.push('/about')
+                // await router.push('/about')
                 // history.push('/register');
               }}
             >

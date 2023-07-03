@@ -19,11 +19,41 @@ model User {
 }
 
 model Team {
-  id            String   @id @default(cuid())
-  name          String   @unique
-  admins        String[]
-  collaborators String[]
-  visitors      String[]
-  createdAt     DateTime @default(now()) @map("created_at")
-  updatedAt     DateTime @updatedAt @map("updated_at")
+  id                  String                @id @default(cuid())
+  name                String                @unique
+  admins              String[]
+  collaborators       String[]
+  visitors            String[]
+  createdAt           DateTime              @default(now()) @map("created_at")
+  updatedAt           DateTime              @updatedAt @map("updated_at")
+  FundTransacationSet FundTransacationSet[]
+}
+
+model FundTransacationSet {
+  id               String                    @id @default(cuid())
+  fundId           String
+  teamId           String
+  team             Team                      @relation(fields: [teamId], references: [id])
+  status           FundTransacationSetStatus
+  FundTransacation FundTransacation[]
+}
+
+model FundTransacation {
+  id                    String                    @id @default(cuid())
+  fundTransacationSetId String
+  fundTransacationSet   FundTransacationSet       @relation(fields: [fundTransacationSetId], references: [id])
+  date                  DateTime
+  direction             FundTransacationDirection
+  volume                Float
+  commission            Float
+}
+
+enum FundTransacationSetStatus {
+  HOLDING
+  CLEARED
+}
+
+enum FundTransacationDirection {
+  BUY
+  SELL
 }

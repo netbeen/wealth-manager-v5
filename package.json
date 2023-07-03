@@ -1,16 +1,18 @@
 {
-  "name": "blogr-nextjs-prisma",
+  "name": "wealth-manager-v5",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "npm run prisma:generate && next build",
     "start": "next start",
+    "lint": "next lint",
+    "vercel:getEnv": "vercel env pull .env.local",
+    "db:dump": "dotenv -e .env.local -- ts-node scripts/backupDatabase.ts",
     "prisma:playground": "dotenv -e .env.local -- npx ts-node prismaPlayground.ts",
     "prisma:prisma:format": "dotenv -e .env.local -- npx prisma format",
     "prisma:prisma:db:push": "dotenv -e .env.local -- npx prisma db push",
-    "prisma:generate": "npx prisma generate",
-    "lint": "next lint"
+    "prisma:generate": "npx prisma generate"
   },
   "dependencies": {
     "@nextui-org/react": "^1.0.0-beta.13",
@@ -47,6 +49,7 @@
     "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "prisma": "^4.16.1",
+    "shelljs": "^0.8.5",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.1.6"
   }

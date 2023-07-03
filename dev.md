@@ -6,3 +6,12 @@
 npx prisma migrate deploy
 No pending migrations to apply.
 
+## For Database Backup
+This project required a PostgreSQL database. Before executing dangerous actions like DDL or DML, it's better to back the existing data into a file and keep safe. 
+
+Steps:
+1. Install the latest Postgres.app
+2. npm run db:dump
+
+Recover
+1. Unzip the tar with ZIP_PASSWORD in `.env.local`

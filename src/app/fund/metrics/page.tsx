@@ -1,9 +1,5 @@
 'use client'
 
-// import layoutStyles from '@/layouts/index.less'
-// import {
-//   fetchBasicInfoUnitPriceSplitDividendByIdentifier,
-// } from '@/services/fund'
 // import { TransactionType, batchFetchTransaction } from '@/services/transaction'
 // import {
 //   TransactionSetStatus,
