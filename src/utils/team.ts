@@ -26,3 +26,11 @@ export const listTeamByUserId = async (userId: string) => {
     },
   })) as Team[]
 }
+
+export const getTeamById = async (id: string) => {
+  return prismaClient.team.findUniqueOrThrow({
+    where: {
+      id,
+    },
+  })
+}

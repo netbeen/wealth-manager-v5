@@ -9,7 +9,7 @@
     "lint": "next lint",
     "vercel:getEnv": "vercel env pull .env.local",
     "db:dump": "dotenv -e .env.local -- ts-node scripts/backupDatabase.ts",
-    "prisma:playground": "dotenv -e .env.local -- npx ts-node prismaPlayground.ts",
+    "prisma:playground": "dotenv -e .env.local -- npx ts-node src/prismaPlayground.ts",
     "prisma:prisma:format": "dotenv -e .env.local -- npx prisma format",
     "prisma:prisma:db:push": "dotenv -e .env.local -- npx prisma db push",
     "prisma:generate": "npx prisma generate"

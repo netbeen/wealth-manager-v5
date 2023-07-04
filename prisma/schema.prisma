@@ -14,46 +14,50 @@ model User {
   id        String   @id @default(cuid())
   name      String   @unique
   password  String
-  createdAt DateTime @default(now()) @map("created_at")
-  updatedAt DateTime @updatedAt @map("updated_at")
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt DateTime @updatedAt @map("updated_at") @db.Timestamptz(3)
 }
 
 model Team {
-  id                  String                @id @default(cuid())
-  name                String                @unique
-  admins              String[]
-  collaborators       String[]
-  visitors            String[]
-  createdAt           DateTime              @default(now()) @map("created_at")
-  updatedAt           DateTime              @updatedAt @map("updated_at")
-  FundTransacationSet FundTransacationSet[]
+  id                 String               @id @default(cuid())
+  name               String               @unique
+  admins             String[]
+  collaborators      String[]
+  visitors           String[]
+  createdAt          DateTime             @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt          DateTime             @updatedAt @map("updated_at") @db.Timestamptz(3)
+  FundTransactionSet FundTransactionSet[]
 }
 
-model FundTransacationSet {
-  id               String                    @id @default(cuid())
-  fundId           String
-  teamId           String
-  team             Team                      @relation(fields: [teamId], references: [id])
-  status           FundTransacationSetStatus
-  FundTransacation FundTransacation[]
+model FundTransactionSet {
+  id              String                   @id @default(cuid())
+  fundId          String
+  teamId          String
+  team            Team                     @relation(fields: [teamId], references: [id])
+  status          FundTransactionSetStatus
+  FundTransaction FundTransaction[]
+  createdAt       DateTime                 @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt       DateTime                 @updatedAt @map("updated_at") @db.Timestamptz(3)
 }
 
-model FundTransacation {
-  id                    String                    @id @default(cuid())
-  fundTransacationSetId String
-  fundTransacationSet   FundTransacationSet       @relation(fields: [fundTransacationSetId], references: [id])
-  date                  DateTime
-  direction             FundTransacationDirection
-  volume                Float
-  commission            Float
+model FundTransaction {
+  id                   String                   @id @default(cuid())
+  fundTransactionSetId String
+  fundTransactionSet   FundTransactionSet       @relation(fields: [fundTransactionSetId], references: [id])
+  date                 DateTime                 @db.Timestamptz(3)
+  direction            FundTransactionDirection
+  volume               Float
+  commission           Float
+  createdAt            DateTime                 @default(now()) @map("created_at") @db.Timestamptz(3)
+  updatedAt            DateTime                 @updatedAt @map("updated_at") @db.Timestamptz(3)
 }
 
-enum FundTransacationSetStatus {
+enum FundTransactionSetStatus {
   HOLDING
   CLEARED
 }
 
-enum FundTransacationDirection {
+enum FundTransactionDirection {
   BUY
   SELL
 }

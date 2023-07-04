@@ -12,14 +12,13 @@ async function main() {
   // console.log(c)
   // const users = await prisma.user.findMany()
   // console.log(users);
-
-  const a = await prisma.team.create({
-    data: {
-      name: '访客演示账本',
-      admins: ['cljec3occ0000mhgfhlq8qu3f'],
-    },
-  })
-  console.log(a)
+  // const a = await prisma.team.create({
+  //   data: {
+  //     name: '访客演示账本',
+  //     admins: ['cljec3occ0000mhgfhlq8qu3f'],
+  //   },
+  // })
+  // console.log(a)
 }
 
 main()

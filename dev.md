@@ -6,12 +6,18 @@
 npx prisma migrate deploy
 No pending migrations to apply.
 
-## For Database Backup
+## To update database table
+Steps:
+1. Execute DDL by `npm run prisma:prisma:db:push`
+2. Generate prisma client by `npm run prisma:generate`
+
+## To backup database
 This project required a PostgreSQL database. Before executing dangerous actions like DDL or DML, it's better to back the existing data into a file and keep safe. 
 
 Steps:
 1. Install the latest Postgres.app
-2. npm run db:dump
+2. Dump the data by `npm run db:dump`
 
 Recover
 1. Unzip the tar with ZIP_PASSWORD in `.env.local`
+2. Restore the database using `pg_restore`

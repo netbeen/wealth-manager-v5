@@ -1,0 +1,2747 @@
+[
+  {
+    "_id": {"$oid": "619c8913ed0f4724b9c2e550"},
+    "__v": 0,
+    "commission": 17.17,
+    "date": "2021-08-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 19196.95
+  },
+  {
+    "_id": {"$oid": "619c894fed0f4724b9c2e555"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2021-08-20T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 25034.48
+  },
+  {
+    "_id": {"$oid": "619c8a78ed0f4724b9c2e55a"},
+    "__v": 0,
+    "commission": 5,
+    "date": "2021-10-27T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 5872.33
+  },
+  {
+    "_id": {"$oid": "619c8ab5ed0f4724b9c2e55f"},
+    "__v": 0,
+    "commission": 9.99,
+    "date": "2021-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 12153.3
+  },
+  {
+    "_id": {"$oid": "619c8af6ed0f4724b9c2e564"},
+    "__v": 0,
+    "commission": 5,
+    "date": "2021-11-18T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 5862.68
+  },
+  {
+    "_id": {"$oid": "619c8cbced0f4724b9c2e593"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2021-05-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 3425.01
+  },
+  {
+    "_id": {"$oid": "619c8cd9ed0f4724b9c2e598"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2021-05-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 3452.72
+  },
+  {
+    "_id": {"$oid": "619c8cfeed0f4724b9c2e59d"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2021-05-14T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 3510.23
+  },
+  {
+    "_id": {"$oid": "619c8d19ed0f4724b9c2e5a2"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2021-06-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 3456.3
+  },
+  {
+    "_id": {"$oid": "619c8d3aed0f4724b9c2e5a7"},
+    "__v": 0,
+    "commission": 6.16,
+    "date": "2021-07-06T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 3692.35
+  },
+  {
+    "_id": {"$oid": "619c8d63ed0f4724b9c2e5ac"},
+    "__v": 0,
+    "commission": 7.79,
+    "date": "2021-07-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 4905.73
+  },
+  {
+    "_id": {"$oid": "619c8d87ed0f4724b9c2e5b1"},
+    "__v": 0,
+    "commission": 8.56,
+    "date": "2021-07-26T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 5915.94
+  },
+  {
+    "_id": {"$oid": "619c8d9fed0f4724b9c2e5b6"},
+    "__v": 0,
+    "commission": 11.51,
+    "date": "2021-07-27T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 8515.8
+  },
+  {
+    "_id": {"$oid": "619c8db8ed0f4724b9c2e5bb"},
+    "__v": 0,
+    "commission": 17.8,
+    "date": "2021-07-30T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 12453.16
+  },
+  {
+    "_id": {"$oid": "619c8ddded0f4724b9c2e5c0"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2021-09-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 4301.84
+  },
+  {
+    "_id": {"$oid": "619c8df7ed0f4724b9c2e5c5"},
+    "__v": 0,
+    "commission": 11.99,
+    "date": "2021-09-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 8688.25
+  },
+  {
+    "_id": {"$oid": "619c8e07ed0f4724b9c2e5ca"},
+    "__v": 0,
+    "commission": 11.99,
+    "date": "2021-09-16T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 9152.4
+  },
+  {
+    "_id": {"$oid": "619c8e1aed0f4724b9c2e5cf"},
+    "__v": 0,
+    "commission": 11.99,
+    "date": "2021-10-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8cbced0f4724b9c2e591",
+    "volume": 8809.32
+  },
+  {
+    "_id": {"$oid": "619cd582535f711594f19547"},
+    "__v": 0,
+    "commission": 5,
+    "date": "2021-07-26T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 2014.68
+  },
+  {
+    "_id": {"$oid": "619cd5a1535f711594f1954c"},
+    "__v": 0,
+    "commission": 5,
+    "date": "2021-08-06T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 1952.24
+  },
+  {
+    "_id": {"$oid": "619cd5c5535f711594f19551"},
+    "__v": 0,
+    "commission": 6.38,
+    "date": "2021-08-18T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 2708.98
+  },
+  {
+    "_id": {"$oid": "619cd5d9535f711594f19556"},
+    "__v": 0,
+    "commission": 9.99,
+    "date": "2021-08-20T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 4471.2
+  },
+  {
+    "_id": {"$oid": "619cd5ff535f711594f1955b"},
+    "__v": 0,
+    "commission": 5,
+    "date": "2021-08-26T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 2193.48
+  },
+  {
+    "_id": {"$oid": "619cd61c535f711594f19560"},
+    "__v": 0,
+    "commission": 5,
+    "date": "2021-09-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 2187.24
+  },
+  {
+    "_id": {"$oid": "619cd666535f711594f19565"},
+    "__v": 0,
+    "commission": 9.99,
+    "date": "2021-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 4734.38
+  },
+  {
+    "_id": {"$oid": "619cf536f0bbcb0009d0e3a7"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2021-06-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cf536f0bbcb0009d0e3a5",
+    "volume": 2958.54
+  },
+  {
+    "_id": {"$oid": "619cf550f0bbcb0009d0e3ac"},
+    "__v": 0,
+    "commission": 6.54,
+    "date": "2021-07-12T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cf536f0bbcb0009d0e3a5",
+    "volume": 3378.46
+  },
+  {
+    "_id": {"$oid": "619cf568f0bbcb0009d0e3b1"},
+    "__v": 0,
+    "commission": 7.53,
+    "date": "2021-08-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cf536f0bbcb0009d0e3a5",
+    "volume": 3957.39
+  },
+  {
+    "_id": {"$oid": "619cf57ff0bbcb0009d0e3b6"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2021-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cf536f0bbcb0009d0e3a5",
+    "volume": 3197.19
+  },
+  {
+    "_id": {"$oid": "61a1de992cd7df7e552a6f32"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2015-12-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1de992cd7df7e552a6f30",
+    "volume": 113.96
+  },
+  {
+    "_id": {"$oid": "61a1deb52cd7df7e552a6f37"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-01-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1de992cd7df7e552a6f30",
+    "volume": 127.54
+  },
+  {
+    "_id": {"$oid": "61a1df472cd7df7e552a6f3c"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-02-05T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1de992cd7df7e552a6f30",
+    "volume": 195.69
+  },
+  {
+    "_id": {"$oid": "61a1df592cd7df7e552a6f41"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-03-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1de992cd7df7e552a6f30",
+    "volume": 191.83
+  },
+  {
+    "_id": {"$oid": "61a1df6e2cd7df7e552a6f46"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-04-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1de992cd7df7e552a6f30",
+    "volume": 131.6
+  },
+  {
+    "_id": {"$oid": "61a1df7f2cd7df7e552a6f4b"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1de992cd7df7e552a6f30",
+    "volume": 165.22
+  },
+  {
+    "_id": {"$oid": "61a1dfa52cd7df7e552a6f50"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-06-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1de992cd7df7e552a6f30",
+    "volume": 136.47
+  },
+  {
+    "_id": {"$oid": "61a1dfcb2cd7df7e552a6f55"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-07-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1de992cd7df7e552a6f30",
+    "volume": 130.23
+  },
+  {
+    "_id": {"$oid": "61a1e874bd0a1c8bfc3c31be"},
+    "__v": 0,
+    "commission": 9.37,
+    "date": "2016-07-13T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61a1de992cd7df7e552a6f30",
+    "volume": 1192.54
+  },
+  {
+    "_id": {"$oid": "61a1e94bbd0a1c8bfc3c31d2"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-08-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 647.17
+  },
+  {
+    "_id": {"$oid": "61a43b5d6a9f8e000988e91d"},
+    "__v": 0,
+    "commission": 9.99,
+    "date": "2021-11-26T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 12293.88
+  },
+  {
+    "_id": {"$oid": "61aa34c2a8ee561d32cbf6cb"},
+    "__v": 0,
+    "commission": 2.4,
+    "date": "2021-05-07T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 1503.09
+  },
+  {
+    "_id": {"$oid": "61aa3574a8ee561d32cbf6dd"},
+    "__v": 0,
+    "commission": 3.6,
+    "date": "2021-05-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 2236.12
+  },
+  {
+    "_id": {"$oid": "61aa3592a8ee561d32cbf6e2"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2021-07-26T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 3773.91
+  },
+  {
+    "_id": {"$oid": "61aa35a3a8ee561d32cbf6e7"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2021-07-30T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 3716.33
+  },
+  {
+    "_id": {"$oid": "61aa35b2a8ee561d32cbf6ec"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2021-08-06T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 3717.72
+  },
+  {
+    "_id": {"$oid": "61aa35c4a8ee561d32cbf6f1"},
+    "__v": 0,
+    "commission": 8.96,
+    "date": "2021-08-18T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 5936.71
+  },
+  {
+    "_id": {"$oid": "61aa35d5a8ee561d32cbf6f6"},
+    "__v": 0,
+    "commission": 17.98,
+    "date": "2021-08-20T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 12760.43
+  },
+  {
+    "_id": {"$oid": "61aa35eea8ee561d32cbf6fb"},
+    "__v": 0,
+    "commission": 11.99,
+    "date": "2021-08-26T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 8355.37
+  },
+  {
+    "_id": {"$oid": "61aa3601a8ee561d32cbf700"},
+    "__v": 0,
+    "commission": 11.99,
+    "date": "2021-09-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 8409.54
+  },
+  {
+    "_id": {"$oid": "61aa362ba8ee561d32cbf705"},
+    "__v": 0,
+    "commission": 11.99,
+    "date": "2021-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 8617.78
+  },
+  {
+    "_id": {"$oid": "61aa3893a8ee561d32cbf72c"},
+    "__v": 0,
+    "commission": 1.19,
+    "date": "2018-03-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3892a8ee561d32cbf72a",
+    "volume": 534.86
+  },
+  {
+    "_id": {"$oid": "61aa38e0a8ee561d32cbf73f"},
+    "__v": 0,
+    "commission": 1.36,
+    "date": "2018-04-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3892a8ee561d32cbf72a",
+    "volume": 658.64
+  },
+  {
+    "_id": {"$oid": "61aa3928a8ee561d32cbf744"},
+    "__v": 0,
+    "commission": 1.33,
+    "date": "2018-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3892a8ee561d32cbf72a",
+    "volume": 638.13
+  },
+  {
+    "_id": {"$oid": "61aa395ca8ee561d32cbf749"},
+    "__v": 0,
+    "commission": 2.4,
+    "date": "2018-07-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3892a8ee561d32cbf72a",
+    "volume": 1302.95
+  },
+  {
+    "_id": {"$oid": "61aa3a94a8ee561d32cbf767"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2020-11-25T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61aa3892a8ee561d32cbf72a",
+    "volume": 3134.58
+  },
+  {
+    "_id": {"$oid": "61aad3eea8ee561d32cbf8e3"},
+    "__v": 0,
+    "commission": 1.5,
+    "date": "2018-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aad3eea8ee561d32cbf8e1",
+    "volume": 526.3
+  },
+  {
+    "_id": {"$oid": "61aad427a8ee561d32cbf8f6"},
+    "__v": 0,
+    "commission": 1.5,
+    "date": "2018-03-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aad3eea8ee561d32cbf8e1",
+    "volume": 488.41
+  },
+  {
+    "_id": {"$oid": "61aad44ba8ee561d32cbf8fb"},
+    "__v": 0,
+    "commission": 1.71,
+    "date": "2018-04-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aad3eea8ee561d32cbf8e1",
+    "volume": 606.41
+  },
+  {
+    "_id": {"$oid": "61aad48ca8ee561d32cbf900"},
+    "__v": 0,
+    "commission": 1.66,
+    "date": "2018-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aad3eea8ee561d32cbf8e1",
+    "volume": 582.69
+  },
+  {
+    "_id": {"$oid": "61aad4ada8ee561d32cbf905"},
+    "__v": 0,
+    "commission": 3.31,
+    "date": "2018-07-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aad3eea8ee561d32cbf8e1",
+    "volume": 1297.32
+  },
+  {
+    "_id": {"$oid": "61aad519a8ee561d32cbf90a"},
+    "__v": 0,
+    "commission": 24.88,
+    "date": "2020-01-03T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61aad3eea8ee561d32cbf8e1",
+    "volume": 3501.13
+  },
+  {
+    "_id": {"$oid": "61aadc09f8321bb39aded2fe"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-09-30T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 798.72
+  },
+  {
+    "_id": {"$oid": "61aadc2af8321bb39aded311"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 796.17
+  },
+  {
+    "_id": {"$oid": "61aadc38f8321bb39aded316"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-12-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 899.34
+  },
+  {
+    "_id": {"$oid": "61aadc46f8321bb39aded31b"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 984.24
+  },
+  {
+    "_id": {"$oid": "61aadc55f8321bb39aded320"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 1046.86
+  },
+  {
+    "_id": {"$oid": "61aadc63f8321bb39aded325"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-03-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 1071.30
+  },
+  {
+    "_id": {"$oid": "61aadc71f8321bb39aded32a"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-04-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 1005.83
+  },
+  {
+    "_id": {"$oid": "61aadc83f8321bb39aded32f"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 1116.9
+  },
+  {
+    "_id": {"$oid": "61aadc92f8321bb39aded334"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-06-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 1212.17
+  },
+  {
+    "_id": {"$oid": "61aadc9ff8321bb39aded339"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-07-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 911.74
+  },
+  {
+    "_id": {"$oid": "61aadcadf8321bb39aded33e"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-08-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 1046.9
+  },
+  {
+    "_id": {"$oid": "61aadcb8f8321bb39aded343"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-09-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 1066.21
+  },
+  {
+    "_id": {"$oid": "61aadcc5f8321bb39aded348"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-10-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 1002.50
+  },
+  {
+    "_id": {"$oid": "61aadcd2f8321bb39aded34d"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 1050.25
+  },
+  {
+    "_id": {"$oid": "61aadce3f8321bb39aded352"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-12-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 1197.97
+  },
+  {
+    "_id": {"$oid": "61aadcf3f8321bb39aded357"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 1142.01
+  },
+  {
+    "_id": {"$oid": "61aaf1d1d5f9fbb92e5ac083"},
+    "__v": 0,
+    "commission": 1.55,
+    "date": "2019-11-25T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61aadbc5f8321bb39aded2e8",
+    "volume": 16349.11
+  },
+  {
+    "_id": {"$oid": "61aaf492d73be0c2548a1809"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2016-09-30T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf456d73be0c2548a17ea",
+    "volume": 814.28
+  },
+  {
+    "_id": {"$oid": "61aaf4e7d73be0c2548a181c"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2016-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf456d73be0c2548a17ea",
+    "volume": 835.59
+  },
+  {
+    "_id": {"$oid": "61aaf50bd73be0c2548a1821"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2016-12-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf456d73be0c2548a17ea",
+    "volume": 814.42
+  },
+  {
+    "_id": {"$oid": "61aaf531d73be0c2548a1826"},
+    "__v": 0,
+    "commission": 1.26,
+    "date": "2017-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf456d73be0c2548a17ea",
+    "volume": 860.28
+  },
+  {
+    "_id": {"$oid": "61aaf56ad73be0c2548a182b"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2017-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf456d73be0c2548a17ea",
+    "volume": 792.57
+  },
+  {
+    "_id": {"$oid": "61aaf57ed73be0c2548a1830"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2017-03-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf456d73be0c2548a17ea",
+    "volume": 778.91
+  },
+  {
+    "_id": {"$oid": "61aaf5c2d73be0c2548a1835"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2017-04-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf456d73be0c2548a17ea",
+    "volume": 765.77
+  },
+  {
+    "_id": {"$oid": "61aaf5dcd73be0c2548a183a"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2017-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf456d73be0c2548a17ea",
+    "volume": 749.06
+  },
+  {
+    "_id": {"$oid": "61aaf607d73be0c2548a183f"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2017-06-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf456d73be0c2548a17ea",
+    "volume": 724.82
+  },
+  {
+    "_id": {"$oid": "61aaf622d73be0c2548a1844"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2017-07-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf456d73be0c2548a17ea",
+    "volume": 733.87
+  },
+  {
+    "_id": {"$oid": "61aaf8bcff22a8c6b381000f"},
+    "__v": 0,
+    "commission": 57.17,
+    "date": "2017-08-02T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61aaf456d73be0c2548a17ea",
+    "volume": 7869.57
+  },
+  {
+    "_id": {"$oid": "61aaf947ff22a8c6b3810053"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-09-30T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 351
+  },
+  {
+    "_id": {"$oid": "61ab0a1fff22a8c6b3810080"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 357.68
+  },
+  {
+    "_id": {"$oid": "61ab0a2eff22a8c6b3810085"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-12-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 472.24
+  },
+  {
+    "_id": {"$oid": "61ab0a3bff22a8c6b381008a"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 495.69
+  },
+  {
+    "_id": {"$oid": "61ab0a45ff22a8c6b381008f"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 369.07
+  },
+  {
+    "_id": {"$oid": "61ab0a55ff22a8c6b3810094"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-03-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 438.4
+  },
+  {
+    "_id": {"$oid": "61ab0a5fff22a8c6b3810099"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-04-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 355.68
+  },
+  {
+    "_id": {"$oid": "61ab0a70ff22a8c6b381009e"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 365.06
+  },
+  {
+    "_id": {"$oid": "61ab0a7cff22a8c6b38100a3"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-06-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 357.79
+  },
+  {
+    "_id": {"$oid": "61ab0a88ff22a8c6b38100a8"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-07-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 544.13
+  },
+  {
+    "_id": {"$oid": "61ab0a94ff22a8c6b38100ad"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-08-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 417.14
+  },
+  {
+    "_id": {"$oid": "61ab0aa2ff22a8c6b38100b2"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-09-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 355.56
+  },
+  {
+    "_id": {"$oid": "61ab0aafff22a8c6b38100b7"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-10-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 362.69
+  },
+  {
+    "_id": {"$oid": "61ab0abdff22a8c6b38100bc"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 404.51
+  },
+  {
+    "_id": {"$oid": "61ab0acdff22a8c6b38100c1"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-12-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 709.74
+  },
+  {
+    "_id": {"$oid": "61ab0ae4ff22a8c6b38100c6"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 361.94
+  },
+  {
+    "_id": {"$oid": "61ab0cbeff22a8c6b38100d7"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2020-05-06T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61aaf924ff22a8c6b3810033",
+    "volume": 6718.32
+  },
+  {
+    "_id": {"$oid": "61ab0e61ff22a8c6b3810116"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-06-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0e61ff22a8c6b3810114",
+    "volume": 797.61
+  },
+  {
+    "_id": {"$oid": "61ab0ea8ff22a8c6b3810134"},
+    "__v": 0,
+    "commission": 4.13,
+    "date": "2016-07-04T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61ab0e61ff22a8c6b3810114",
+    "volume": 797.61
+  },
+  {
+    "_id": {"$oid": "61ab0f8dff22a8c6b3810181"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-07-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 969.84
+  },
+  {
+    "_id": {"$oid": "61ab0fc5ff22a8c6b3810194"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-08-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 1095.37
+  },
+  {
+    "_id": {"$oid": "61ab0fd4ff22a8c6b3810199"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-09-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 983.19
+  },
+  {
+    "_id": {"$oid": "61ab0fe2ff22a8c6b381019e"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-09-30T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 1133.57
+  },
+  {
+    "_id": {"$oid": "61ab0ff0ff22a8c6b38101a3"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 1133.94
+  },
+  {
+    "_id": {"$oid": "61ab1001ff22a8c6b38101a8"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-12-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 1223.18
+  },
+  {
+    "_id": {"$oid": "61ab100cff22a8c6b38101ad"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 2166.5
+  },
+  {
+    "_id": {"$oid": "61ab1017ff22a8c6b38101b2"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 2663.27
+  },
+  {
+    "_id": {"$oid": "61ab1028ff22a8c6b38101b7"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-03-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 2008.36
+  },
+  {
+    "_id": {"$oid": "61ab103cff22a8c6b38101bc"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-04-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 2012.3
+  },
+  {
+    "_id": {"$oid": "61ab104aff22a8c6b38101c1"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 4488.95
+  },
+  {
+    "_id": {"$oid": "61ab1066ff22a8c6b38101c6"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-06-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 4174.07
+  },
+  {
+    "_id": {"$oid": "61ab1074ff22a8c6b38101cb"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-07-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 3031.1
+  },
+  {
+    "_id": {"$oid": "61ab1080ff22a8c6b38101d0"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-08-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 4978.37
+  },
+  {
+    "_id": {"$oid": "61ab108cff22a8c6b38101d5"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-09-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 1095.05
+  },
+  {
+    "_id": {"$oid": "61ab1098ff22a8c6b38101da"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-10-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 1106.14
+  },
+  {
+    "_id": {"$oid": "61ab10a5ff22a8c6b38101df"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 1771.2
+  },
+  {
+    "_id": {"$oid": "61ab10b0ff22a8c6b38101e4"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-12-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 5226.91
+  },
+  {
+    "_id": {"$oid": "61ab10bdff22a8c6b38101e9"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 4808.58
+  },
+  {
+    "_id": {"$oid": "61ab10e0ff22a8c6b38101ee"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 14056.2
+  },
+  {
+    "_id": {"$oid": "61ab10f3ff22a8c6b38101f3"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-06-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 5925.93
+  },
+  {
+    "_id": {"$oid": "61ab1102ff22a8c6b38101f8"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-08-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 28213.26
+  },
+  {
+    "_id": {"$oid": "61ab11d1ff22a8c6b3810211"},
+    "__v": 0,
+    "commission": 90.59,
+    "date": "2020-02-26T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61ab0f8dff22a8c6b381017f",
+    "volume": 94265.28
+  },
+  {
+    "_id": {"$oid": "61ab169050d562d3a4b0ff31"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-09-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 633.87
+  },
+  {
+    "_id": {"$oid": "61ab16a150d562d3a4b0ff37"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-09-30T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 683.79
+  },
+  {
+    "_id": {"$oid": "61ab16b950d562d3a4b0ff3d"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 635.04
+  },
+  {
+    "_id": {"$oid": "61ab175850d562d3a4b0ff43"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-12-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 629.6
+  },
+  {
+    "_id": {"$oid": "61ab176b50d562d3a4b0ff48"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 679.44
+  },
+  {
+    "_id": {"$oid": "61ab177650d562d3a4b0ff4d"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 795.76
+  },
+  {
+    "_id": {"$oid": "61ab179250d562d3a4b0ff52"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-03-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 630.04
+  },
+  {
+    "_id": {"$oid": "61ab17a650d562d3a4b0ff57"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-04-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 624.22
+  },
+  {
+    "_id": {"$oid": "61ab17b350d562d3a4b0ff5c"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 1514.82
+  },
+  {
+    "_id": {"$oid": "61ab17c250d562d3a4b0ff61"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-06-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 1540.14
+  },
+  {
+    "_id": {"$oid": "61ab17d150d562d3a4b0ff66"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-07-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 709.94
+  },
+  {
+    "_id": {"$oid": "61ab17db50d562d3a4b0ff6b"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-08-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 640.94
+  },
+  {
+    "_id": {"$oid": "61ab17e650d562d3a4b0ff70"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-09-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 619.08
+  },
+  {
+    "_id": {"$oid": "61ab17f450d562d3a4b0ff75"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-10-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 609.9
+  },
+  {
+    "_id": {"$oid": "61ab180350d562d3a4b0ff7a"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 615.73
+  },
+  {
+    "_id": {"$oid": "61ab181650d562d3a4b0ff7f"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-12-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 962.89
+  },
+  {
+    "_id": {"$oid": "61ab182450d562d3a4b0ff84"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 630.4
+  },
+  {
+    "_id": {"$oid": "61ab183a50d562d3a4b0ff89"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 3231.69
+  },
+  {
+    "_id": {"$oid": "61ab184850d562d3a4b0ff8e"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-04-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 1481.86
+  },
+  {
+    "_id": {"$oid": "61ab185350d562d3a4b0ff93"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 1308.82
+  },
+  {
+    "_id": {"$oid": "61ab186050d562d3a4b0ff98"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-06-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 3265.36
+  },
+  {
+    "_id": {"$oid": "61ab187350d562d3a4b0ff9d"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-06-20T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 8400.71
+  },
+  {
+    "_id": {"$oid": "61ab188950d562d3a4b0ffa2"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-07-19T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 8242.26
+  },
+  {
+    "_id": {"$oid": "61ab189a50d562d3a4b0ffa7"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-09-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 14428.08
+  },
+  {
+    "_id": {"$oid": "61ab18a750d562d3a4b0ffac"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-10-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 14335.41
+  },
+  {
+    "_id": {"$oid": "61ab18ba50d562d3a4b0ffb1"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-11-12T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 12128.89
+  },
+  {
+    "_id": {"$oid": "61ab18c550d562d3a4b0ffb6"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-12-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 5521.83
+  },
+  {
+    "_id": {"$oid": "61ab18d250d562d3a4b0ffbb"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2019-01-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 7405.04
+  },
+  {
+    "_id": {"$oid": "61ab18de50d562d3a4b0ffc0"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2019-02-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61a1e94bbd0a1c8bfc3c31d0",
+    "volume": 8903.13
+  },
+  {
+    "_id": {"$oid": "61ab1d8350d562d3a4b1000d"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab1d8350d562d3a4b1000b",
+    "volume": 750.05
+  },
+  {
+    "_id": {"$oid": "61ab1e2f50d562d3a4b10012"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-06-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab1d8350d562d3a4b1000b",
+    "volume": 723.98
+  },
+  {
+    "_id": {"$oid": "61ab1e4c50d562d3a4b10017"},
+    "__v": 0,
+    "commission": 8.32,
+    "date": "2016-07-04T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61ab1d8350d562d3a4b1000b",
+    "volume": 1474.03
+  },
+  {
+    "_id": {"$oid": "61ab1ead50d562d3a4b1004f"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-07-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab1ead50d562d3a4b1004d",
+    "volume": 882.85
+  },
+  {
+    "_id": {"$oid": "61ab1ebc50d562d3a4b10054"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-08-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab1ead50d562d3a4b1004d",
+    "volume": 861.77
+  },
+  {
+    "_id": {"$oid": "61ab1ec850d562d3a4b10059"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-09-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab1ead50d562d3a4b1004d",
+    "volume": 844.81
+  },
+  {
+    "_id": {"$oid": "61ab1ed650d562d3a4b1005e"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-09-30T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab1ead50d562d3a4b1004d",
+    "volume": 859.62
+  },
+  {
+    "_id": {"$oid": "61ab1eea50d562d3a4b10063"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab1ead50d562d3a4b1004d",
+    "volume": 834.24
+  },
+  {
+    "_id": {"$oid": "61ab206650d562d3a4b100cb"},
+    "__v": 0,
+    "commission": 26.61,
+    "date": "2016-11-23T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61ab1ead50d562d3a4b1004d",
+    "volume": 4283.29
+  },
+  {
+    "_id": {"$oid": "61ab20e050d562d3a4b100f6"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2016-12-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab20e050d562d3a4b100f4",
+    "volume": 848.07
+  },
+  {
+    "_id": {"$oid": "61ab20f050d562d3a4b100fb"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab20e050d562d3a4b100f4",
+    "volume": 945.99
+  },
+  {
+    "_id": {"$oid": "61ab20fd50d562d3a4b10100"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab20e050d562d3a4b100f4",
+    "volume": 905.21
+  },
+  {
+    "_id": {"$oid": "61ab210950d562d3a4b10105"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-03-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab20e050d562d3a4b100f4",
+    "volume": 852.91
+  },
+  {
+    "_id": {"$oid": "61ab211a50d562d3a4b1010a"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-04-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab20e050d562d3a4b100f4",
+    "volume": 839.8
+  },
+  {
+    "_id": {"$oid": "61ab212650d562d3a4b1010f"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab20e050d562d3a4b100f4",
+    "volume": 1036.82
+  },
+  {
+    "_id": {"$oid": "61ab213c50d562d3a4b10114"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-06-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab20e050d562d3a4b100f4",
+    "volume": 820.43
+  },
+  {
+    "_id": {"$oid": "61ab216d50d562d3a4b10127"},
+    "__v": 0,
+    "commission": 41.53,
+    "date": "2017-06-30T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61ab20e050d562d3a4b100f4",
+    "volume": 6249.23
+  },
+  {
+    "_id": {"$oid": "61ab21fe50d562d3a4b1016a"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-07-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab21fe50d562d3a4b10168",
+    "volume": 752.45
+  },
+  {
+    "_id": {"$oid": "61ab2352b2ec67e10aa427b9"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-08-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab21fe50d562d3a4b10168",
+    "volume": 733.51
+  },
+  {
+    "_id": {"$oid": "61ab240eb2ec67e10aa427c4"},
+    "__v": 0,
+    "commission": 10.4,
+    "date": "2017-09-08T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61ab21fe50d562d3a4b10168",
+    "volume": 1485.96
+  },
+  {
+    "_id": {"$oid": "61ab244cb2ec67e10aa427f1"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-09-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab244cb2ec67e10aa427ef",
+    "volume": 714.69
+  },
+  {
+    "_id": {"$oid": "61ab245ab2ec67e10aa427f6"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-10-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab244cb2ec67e10aa427ef",
+    "volume": 704.72
+  },
+  {
+    "_id": {"$oid": "61ab247fb2ec67e10aa427fb"},
+    "__v": 0,
+    "commission": 10.42,
+    "date": "2017-11-06T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61ab244cb2ec67e10aa427ef",
+    "volume": 1419.41
+  },
+  {
+    "_id": {"$oid": "61ab24c7b2ec67e10aa42816"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab24c7b2ec67e10aa42814",
+    "volume": 672.54
+  },
+  {
+    "_id": {"$oid": "61ab24d7b2ec67e10aa4281b"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-12-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab24c7b2ec67e10aa42814",
+    "volume": 696.89
+  },
+  {
+    "_id": {"$oid": "61ab24e6b2ec67e10aa42820"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab24c7b2ec67e10aa42814",
+    "volume": 656
+  },
+  {
+    "_id": {"$oid": "61ab24f4b2ec67e10aa42825"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab24c7b2ec67e10aa42814",
+    "volume": 807.23
+  },
+  {
+    "_id": {"$oid": "61ab2506b2ec67e10aa4282a"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-04-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab24c7b2ec67e10aa42814",
+    "volume": 957.62
+  },
+  {
+    "_id": {"$oid": "61ab251cb2ec67e10aa4282f"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab24c7b2ec67e10aa42814",
+    "volume": 904.79
+  },
+  {
+    "_id": {"$oid": "61ab252db2ec67e10aa42834"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-07-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab24c7b2ec67e10aa42814",
+    "volume": 2217.38
+  },
+  {
+    "_id": {"$oid": "61ab2544b2ec67e10aa42839"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2019-01-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab24c7b2ec67e10aa42814",
+    "volume": 1402.18
+  },
+  {
+    "_id": {"$oid": "61ab2df411dbc2e2746481f8"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 936.07
+  },
+  {
+    "_id": {"$oid": "61ab2e1311dbc2e27464820c"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2017-12-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 986.65
+  },
+  {
+    "_id": {"$oid": "61ab2e1e11dbc2e274648211"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 898.31
+  },
+  {
+    "_id": {"$oid": "61ab2e2b11dbc2e274648216"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 1057.15
+  },
+  {
+    "_id": {"$oid": "61ab2e3a11dbc2e27464821b"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2018-04-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 1223.12
+  },
+  {
+    "_id": {"$oid": "61ab2e5711dbc2e274648220"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2020-03-19T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 2877.6655
+  },
+  {
+    "_id": {"$oid": "61ab2e6511dbc2e274648225"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2020-04-14T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 1479.9797
+  },
+  {
+    "_id": {"$oid": "61ab2e7a11dbc2e27464822a"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2020-05-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 1263.8535
+  },
+  {
+    "_id": {"$oid": "61ab2e8811dbc2e27464822f"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2020-06-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 1003.613
+  },
+  {
+    "_id": {"$oid": "61ab2e9311dbc2e274648234"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2020-09-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 1264.88
+  },
+  {
+    "_id": {"$oid": "61ab2e9f11dbc2e274648239"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2020-10-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 2691.38
+  },
+  {
+    "_id": {"$oid": "61ab304b11dbc2e274648264"},
+    "__v": 0,
+    "commission": 14.98,
+    "date": "2021-05-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab304b11dbc2e274648262",
+    "volume": 2860.96
+  },
+  {
+    "_id": {"$oid": "61ab306611dbc2e27464826b"},
+    "__v": 0,
+    "commission": 14.98,
+    "date": "2021-05-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab306611dbc2e274648269",
+    "volume": 9922.51
+  },
+  {
+    "_id": {"$oid": "61ab308311dbc2e274648272"},
+    "__v": 0,
+    "commission": 14.98,
+    "date": "2021-05-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab308311dbc2e274648270",
+    "volume": 4573.78
+  },
+  {
+    "_id": {"$oid": "61ab316311dbc2e2746482a3"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2018-03-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab316311dbc2e2746482a1",
+    "volume": 972.25
+  },
+  {
+    "_id": {"$oid": "61ab319e11dbc2e2746482a8"},
+    "__v": 0,
+    "commission": 1.27,
+    "date": "2018-04-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab316311dbc2e2746482a1",
+    "volume": 1059.05
+  },
+  {
+    "_id": {"$oid": "61ab31be11dbc2e2746482ad"},
+    "__v": 0,
+    "commission": 1.29,
+    "date": "2018-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab316311dbc2e2746482a1",
+    "volume": 1084.27
+  },
+  {
+    "_id": {"$oid": "61ab31d511dbc2e2746482b2"},
+    "__v": 0,
+    "commission": 2.44,
+    "date": "2018-07-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab316311dbc2e2746482a1",
+    "volume": 2381.21
+  },
+  {
+    "_id": {"$oid": "61ab34fc11dbc2e274648304"},
+    "__v": 0,
+    "commission": 1.5,
+    "date": "2018-03-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab34fc11dbc2e274648302",
+    "volume": 815.77
+  },
+  {
+    "_id": {"$oid": "61ab350a11dbc2e274648309"},
+    "__v": 0,
+    "commission": 1.67,
+    "date": "2018-04-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab34fc11dbc2e274648302",
+    "volume": 957.18
+  },
+  {
+    "_id": {"$oid": "61ab351c11dbc2e27464830e"},
+    "__v": 0,
+    "commission": 1.6,
+    "date": "2018-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab34fc11dbc2e274648302",
+    "volume": 909.04
+  },
+  {
+    "_id": {"$oid": "61ac296e11dbc2e274648924"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2020-03-23T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ac296e11dbc2e274648922",
+    "volume": 27227.1836
+  },
+  {
+    "_id": {"$oid": "61ac2a2111dbc2e27464895d"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2021-04-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ac2a2011dbc2e27464895b",
+    "volume": 20669.6982
+  },
+  {
+    "_id": {"$oid": "61ac2aaf11dbc2e27464896d"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2020-03-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ac2aaf11dbc2e27464896b",
+    "volume": 48123.1954
+  },
+  {
+    "_id": {"$oid": "61ac2b1711dbc2e2746489c9"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2021-12-02T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61ac2aaf11dbc2e27464896b",
+    "volume": 48123.1954
+  },
+  {
+    "_id": {"$oid": "61aed759fd173870750e5bf5"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2021-12-06T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 26355.39
+  },
+  {
+    "_id": {"$oid": "61b4bde257dd240351b3968d"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2021-12-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 4211.51
+  },
+  {
+    "_id": {"$oid": "61b4be6e57dd240351b396da"},
+    "__v": 0,
+    "commission": 0,
+    "date": "2021-12-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61ab2df411dbc2e2746481f6",
+    "volume": 5251.55
+  },
+  {
+    "_id": {"$oid": "61bade911c8665000869ee78"},
+    "__v": 0,
+    "commission": 11.99,
+    "date": "2021-12-15T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 8813.99
+  },
+  {
+    "_id": {"$oid": "61badf589d5ab6000989a91a"},
+    "__v": 0,
+    "commission": 9.99,
+    "date": "2021-12-15T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 4607.73
+  },
+  {
+    "_id": {"$oid": "61bf51654303230009726b15"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2020-02-26T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf51654303230009726b13",
+    "volume": 916.83
+  },
+  {
+    "_id": {"$oid": "61bf51d74303230009726b23"},
+    "__v": 0,
+    "commission": 2.4,
+    "date": "2020-06-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf51654303230009726b13",
+    "volume": 1935.1
+  },
+  {
+    "_id": {"$oid": "61bf520e4303230009726b2b"},
+    "__v": 0,
+    "commission": 2.4,
+    "date": "2020-07-29T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf51654303230009726b13",
+    "volume": 1752.28
+  },
+  {
+    "_id": {"$oid": "61bf52874303230009726b33"},
+    "__v": 0,
+    "commission": 2.4,
+    "date": "2020-08-04T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf51654303230009726b13",
+    "volume": 1712.62
+  },
+  {
+    "_id": {"$oid": "61bf532e05dcb50009800c84"},
+    "__v": 0,
+    "commission": 2.4,
+    "date": "2020-08-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf51654303230009726b13",
+    "volume": 1735.08
+  },
+  {
+    "_id": {"$oid": "61bf53864303230009726b40"},
+    "__v": 0,
+    "commission": 2.4,
+    "date": "2020-11-23T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf51654303230009726b13",
+    "volume": 1666.89
+  },
+  {
+    "_id": {"$oid": "61bf54294303230009726b48"},
+    "__v": 0,
+    "commission": 2.4,
+    "date": "2020-12-07T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf51654303230009726b13",
+    "volume": 1663.28
+  },
+  {
+    "_id": {"$oid": "61bf544105dcb50009800c95"},
+    "__v": 0,
+    "commission": 2.4,
+    "date": "2020-12-21T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf51654303230009726b13",
+    "volume": 1716.74
+  },
+  {
+    "_id": {"$oid": "61bf557405dcb50009800caa"},
+    "__v": 0,
+    "commission": 3.6,
+    "date": "2021-08-30T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf557405dcb50009800ca8",
+    "volume": 4405.17
+  },
+  {
+    "_id": {"$oid": "61bf55e24303230009726b6c"},
+    "__v": 0,
+    "commission": 0.65,
+    "date": "2018-08-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf55e24303230009726b6a",
+    "volume": 215.7
+  },
+  {
+    "_id": {"$oid": "61bf55f705dcb50009800cbc"},
+    "__v": 0,
+    "commission": 0.65,
+    "date": "2018-09-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf55e24303230009726b6a",
+    "volume": 212.04
+  },
+  {
+    "_id": {"$oid": "61bf560e05dcb50009800cc1"},
+    "__v": 0,
+    "commission": 0.65,
+    "date": "2018-10-15T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf55e24303230009726b6a",
+    "volume": 225.64
+  },
+  {
+    "_id": {"$oid": "61bf562b681b6600098f0d8a"},
+    "__v": 0,
+    "commission": 0.65,
+    "date": "2018-11-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf55e24303230009726b6a",
+    "volume": 232
+  },
+  {
+    "_id": {"$oid": "61bf568505dcb50009800cc6"},
+    "__v": 0,
+    "commission": 0.65,
+    "date": "2018-12-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf55e24303230009726b6a",
+    "volume": 237.13
+  },
+  {
+    "_id": {"$oid": "61bf56d505dcb50009800ccb"},
+    "__v": 0,
+    "commission": 9.39,
+    "date": "2020-02-26T00:00:00+08:00",
+    "direction": "SELL",
+    "transactionSet": "61bf55e24303230009726b6a",
+    "volume": 1122.51
+  },
+  {
+    "_id": {"$oid": "61bf595c4303230009726ba6"},
+    "__v": 0,
+    "commission": 3.89,
+    "date": "2020-11-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf595c4303230009726ba4",
+    "volume": 859.59
+  },
+  {
+    "_id": {"$oid": "61bf59814303230009726bab"},
+    "__v": 0,
+    "commission": 3.89,
+    "date": "2021-02-24T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf595c4303230009726ba4",
+    "volume": 793.88
+  },
+  {
+    "_id": {"$oid": "61bf5a04681b6600098f0db8"},
+    "__v": 0,
+    "commission": 1.5,
+    "date": "2021-03-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 357.9
+  },
+  {
+    "_id": {"$oid": "61bf5a1d4303230009726bc3"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-03-16T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 279.56
+  },
+  {
+    "_id": {"$oid": "61bf5a3005dcb50009800d11"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-03-30T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 278.55
+  },
+  {
+    "_id": {"$oid": "61bf5a4a4303230009726bc8"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-04-13T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 286.28
+  },
+  {
+    "_id": {"$oid": "61bf5a594303230009726bcd"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-04-27T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 267.49
+  },
+  {
+    "_id": {"$oid": "61bf5a862347a400093b910f"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-05-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 282.97
+  },
+  {
+    "_id": {"$oid": "61bf5a9705dcb50009800d16"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-05-25T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 257.21
+  },
+  {
+    "_id": {"$oid": "61bf5aa84303230009726bd2"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-06-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 261.99
+  },
+  {
+    "_id": {"$oid": "61bf5abc681b6600098f0dbd"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-06-22T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 269.82
+  },
+  {
+    "_id": {"$oid": "61bf5acc4303230009726bd7"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-07-06T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 275.15
+  },
+  {
+    "_id": {"$oid": "61bf5ae54303230009726bdc"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-07-20T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 273.72
+  },
+  {
+    "_id": {"$oid": "61bf5af74303230009726be1"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-08-03T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 309.79
+  },
+  {
+    "_id": {"$oid": "61bf5b192347a400093b9114"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-08-17T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 320.97
+  },
+  {
+    "_id": {"$oid": "61bf5b2605dcb50009800d1b"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-08-31T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 327.56
+  },
+  {
+    "_id": {"$oid": "61bf5b47681b6600098f0dc2"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-09-14T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 315.93
+  },
+  {
+    "_id": {"$oid": "61bf5b5f681b6600098f0dc7"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-09-28T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 310.9
+  },
+  {
+    "_id": {"$oid": "61bf5b714303230009726be6"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-10-12T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 299.82
+  },
+  {
+    "_id": {"$oid": "61bf5b834303230009726beb"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-10-26T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 297.07
+  },
+  {
+    "_id": {"$oid": "61bf5b989a7e1f000b10862a"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-11-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 309.16
+  },
+  {
+    "_id": {"$oid": "61bf5ba69a7e1f000b10862f"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-11-23T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 309.95
+  },
+  {
+    "_id": {"$oid": "61bf5bb99a7e1f000b108634"},
+    "__v": 0,
+    "commission": 1.2,
+    "date": "2021-12-07T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5a04681b6600098f0db6",
+    "volume": 304.33
+  },
+  {
+    "_id": {"$oid": "61bf5c1e3002eb000a6d04dc"},
+    "__v": 0,
+    "commission": 3,
+    "date": "2020-08-04T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5c1e3002eb000a6d04da",
+    "volume": 501.51
+  },
+  {
+    "_id": {"$oid": "61bf5c319a7e1f000b10863f"},
+    "__v": 0,
+    "commission": 3,
+    "date": "2020-09-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5c1e3002eb000a6d04da",
+    "volume": 485.89
+  },
+  {
+    "_id": {"$oid": "61bf5c9d3002eb000a6d04e7"},
+    "__v": 0,
+    "commission": 1.5,
+    "date": "2020-04-30T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5c9d3002eb000a6d04e5",
+    "volume": 1027.26
+  },
+  {
+    "_id": {"$oid": "61bf5cef3002eb000a6d04f6"},
+    "__v": 0,
+    "commission": 3,
+    "date": "2021-09-03T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61bf5cef3002eb000a6d04f4",
+    "volume": 706.4
+  },
+  {
+    "_id": {"$oid": "61dd22936d63340008a3b87f"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-01-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 26808.02
+  },
+  {
+    "_id": {"$oid": "61dd22de9460d60008422873"},
+    "__v": 0,
+    "commission": 17.98,
+    "date": "2022-01-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 14168.73
+  },
+  {
+    "_id": {"$oid": "6204c385b1bf6b000970a215"},
+    "__v": 0,
+    "commission": 14.99,
+    "date": "2022-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 20076.38
+  },
+  {
+    "_id": {"$oid": "6204c55dfc25310008fd32b1"},
+    "__v": 0,
+    "commission": 23.97,
+    "date": "2022-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 21442.71
+  },
+  {
+    "_id": {"$oid": "622ab26b642c3100081884f0"},
+    "__v": 0,
+    "commission": 23.97,
+    "date": "2022-03-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 22764.71
+  },
+  {
+    "_id": {"$oid": "622ab2a69ce11b0008a21f9e"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-03-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 34235.81
+  },
+  {
+    "_id": {"$oid": "6253bb316d677500098efbae"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-04-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 33841.5
+  },
+  {
+    "_id": {"$oid": "6253bb609c0ce200089304e7"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-04-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 10956.36
+  },
+  {
+    "_id": {"$oid": "627b1b3fdecf4c0008c8ae5e"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-05-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 36320.71
+  },
+  {
+    "_id": {"$oid": "627b1b75decf4c0008c8ae66"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-05-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 12226.93
+  },
+  {
+    "_id": {"$oid": "62a2d63f2022d70004f7f04e"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-06-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 12181.45
+  },
+  {
+    "_id": {"$oid": "62a2ee8176f38200045a22d3"},
+    "__v": 0,
+    "commission": 14.99,
+    "date": "2022-06-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 22547.41
+  },
+  {
+    "_id": {"$oid": "62cc356b8e9e1a0004535158"},
+    "__v": 0,
+    "commission": 9.99,
+    "date": "2022-07-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 14780.31
+  },
+  {
+    "_id": {"$oid": "62cc35c36d019a0004835f3d"},
+    "__v": 0,
+    "commission": 11.99,
+    "date": "2022-07-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 10110.35
+  },
+  {
+    "_id": {"$oid": "62cc36176d019a0004835f50"},
+    "__v": 0,
+    "commission": 11.99,
+    "date": "2022-07-08T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cf536f0bbcb0009d0e3a5",
+    "volume": 6553.81
+  },
+  {
+    "_id": {"$oid": "62f5e3f4b47dbd0004b8a946"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-08-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 33602.46
+  },
+  {
+    "_id": {"$oid": "62f5e42556b3760004075fb7"},
+    "__v": 0,
+    "commission": 23.97,
+    "date": "2022-08-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 22743.97
+  },
+  {
+    "_id": {"$oid": "632025b299e0610004ec2523"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-09-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 12887.84
+  },
+  {
+    "_id": {"$oid": "632025f8a801f60004ad9649"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-09-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 33630.74
+  },
+  {
+    "_id": {"$oid": "6346125e2b99090004ad00ee"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-10-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 38841.41
+  },
+  {
+    "_id": {"$oid": "6346129de68eac00047e29ce"},
+    "__v": 0,
+    "commission": 23.97,
+    "date": "2022-10-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 25662.94
+  },
+  {
+    "_id": {"$oid": "636e17988e423c00041d5d79"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-11-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 41119.61
+  },
+  {
+    "_id": {"$oid": "636e180fc554fc0004199f40"},
+    "__v": 0,
+    "commission": 23.97,
+    "date": "2022-11-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 23506.74
+  },
+  {
+    "_id": {"$oid": "6396976b06742a0004f71bf6"},
+    "__v": 0,
+    "commission": 9.99,
+    "date": "2022-12-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 15668.15
+  },
+  {
+    "_id": {"$oid": "63971ae80a7f5400048fc57c"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2022-12-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 12683.31
+  },
+  {
+    "_id": {"$oid": "63971b30fdad860004214a0b"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2022-12-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cf536f0bbcb0009d0e3a5",
+    "volume": 3272.61
+  },
+  {
+    "_id": {"$oid": "63bd7087150fa00004d437b3"},
+    "__v": 0,
+    "commission": 5,
+    "date": "2023-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 7666.92
+  },
+  {
+    "_id": {"$oid": "63bd70c9150fa00004d437cf"},
+    "__v": 0,
+    "commission": 17.98,
+    "date": "2023-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 16850.77
+  },
+  {
+    "_id": {"$oid": "63bd713e150fa00004d437fb"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2023-01-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cf536f0bbcb0009d0e3a5",
+    "volume": 3294.2
+  },
+  {
+    "_id": {"$oid": "64098ce9ab0849c5257007e2"},
+    "__v": 0,
+    "commission": 9.99,
+    "date": "2023-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 15565.61
+  },
+  {
+    "_id": {"$oid": "64098d49ab0849c5257007ec"},
+    "__v": 0,
+    "commission": 9.99,
+    "date": "2023-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 6001.09
+  },
+  {
+    "_id": {"$oid": "6409939630b50a22a9433676"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2023-02-09T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cf536f0bbcb0009d0e3a5",
+    "volume": 3279.06
+  },
+  {
+    "_id": {"$oid": "64142f3d66b908a173424c44"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2023-03-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 36593.44
+  },
+  {
+    "_id": {"$oid": "64142f6e66b908a173424c50"},
+    "__v": 0,
+    "commission": 17.98,
+    "date": "2023-03-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 17574.22
+  },
+  {
+    "_id": {"$oid": "64142f8baa8f17d0266e402b"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2023-03-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cf536f0bbcb0009d0e3a5",
+    "volume": 3309.48
+  },
+  {
+    "_id": {"$oid": "6436c0edf9c72548280e68c5"},
+    "__v": 0,
+    "commission": 14.99,
+    "date": "2023-04-11T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 24970.85
+  },
+  {
+    "_id": {"$oid": "6436c1521501a1556f383de5"},
+    "__v": 0,
+    "commission": 14.99,
+    "date": "2023-04-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cd582535f711594f19545",
+    "volume": 9465.01
+  },
+  {
+    "_id": {"$oid": "6436c1831501a1556f383e12"},
+    "__v": 0,
+    "commission": 5.99,
+    "date": "2023-04-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619cf536f0bbcb0009d0e3a5",
+    "volume": 3230.28
+  },
+  {
+    "_id": {"$oid": "64683332bedfee62032128d2"},
+    "__v": 0,
+    "commission": 23.97,
+    "date": "2023-05-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 25639.88
+  },
+  {
+    "_id": {"$oid": "64683371c65dfc646a53ee49"},
+    "__v": 0,
+    "commission": 19.98,
+    "date": "2023-05-10T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 36714.48
+  },
+  {
+    "_id": {"$oid": "649f00410c68d04d7bed4109"},
+    "__v": 0,
+    "commission": 14.99,
+    "date": "2023-06-12T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "619c8912ed0f4724b9c2e54e",
+    "volume": 25948.07
+  },
+  {
+    "_id": {"$oid": "649f01a60c68d04d7bed4130"},
+    "__v": 0,
+    "commission": 23.97,
+    "date": "2023-06-12T00:00:00+08:00",
+    "direction": "BUY",
+    "transactionSet": "61aa3409a8ee561d32cbf6b7",
+    "volume": 26910.99
+  }
+]
