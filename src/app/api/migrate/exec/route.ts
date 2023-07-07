@@ -6,4 +6,4 @@ async function handler() {
   return NextResponse.json({ data: 'done' })
 }
 
-export const GET = handler
+export const POST = handler
