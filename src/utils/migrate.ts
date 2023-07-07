@@ -6,11 +6,11 @@ import {
 } from '@/utils/fundTransacation'
 import { getTeamById } from '@/utils/team'
 
-const yyV4UserId = '6193a7146865251545a99dfe'
+// const yyV4UserId = '6193a7146865251545a99dfe'
 const yyV4TeamId = '6194bc94ab58576b069d0c91'
 const yyV5TeamId = 'cljf7h3dw0000mhyertfws9j2'
 
-const currentV4TransactionSetId: string | null = null
+// const currentV4TransactionSetId: string | null = null
 
 export const migrateFromV4ToV5 = async () => {
   const team = await getTeamById(yyV5TeamId)
