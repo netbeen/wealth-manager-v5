@@ -6,7 +6,14 @@ import { Team, User } from '.prisma/client/index'
 import prismaClient from '@@/lib/prismaClient'
 import { kv } from '@vercel/kv'
 
-const pathWithoutAuthentication = ['/api/user/login']
+const pathWithoutAuthentication = [
+  /^\/api\/user\/login$/,
+  /^\/api\/fund\/\d+\/basic-info$/,
+  /^\/api\/fund\/\d+\/unit-price$/,
+  /^\/api\/fund\/\d+\/accumulated-price$/,
+  /^\/api\/fund\/\d+\/split$/,
+  /^\/api\/fund\/\d+\/dividend$/,
+]
 
 export const usingMiddleware = (
   handler: (
@@ -18,7 +25,11 @@ export const usingMiddleware = (
 ) => {
   return async function (req: NextRequest, params: any) {
     let user: User | undefined = undefined
-    if (!pathWithoutAuthentication.includes(new URL(req.url).pathname)) {
+    if (
+      !pathWithoutAuthentication.find((item) =>
+        item.test(new URL(req.url).pathname)
+      )
+    ) {
       const jwtToken = req.cookies.get(SESSION_TOKEN_COOKIE_NAME)?.value
       const loginUser = await getLoginUserByJwtToken(jwtToken)
       if (!loginUser) {
