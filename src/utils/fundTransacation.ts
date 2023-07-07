@@ -6,7 +6,6 @@ import prismaClient from '../../lib/prismaClient'
 import { Team } from '@/utils/team'
 import {
   findOrCreateFundTransactionSet,
-  FundTransactionSet,
   FundTransactionSetStatus,
 } from '@/utils/fundTransacationSet'
 
