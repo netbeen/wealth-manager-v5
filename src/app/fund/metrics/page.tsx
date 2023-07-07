@@ -41,7 +41,19 @@ const restChartProps = {
   autoFit: true,
 }
 
-class TransactionType {}
+enum TRANSACTION_DIRECTION {
+  BUY = 'BUY',
+  SELL = 'SELL',
+}
+
+interface TransactionType {
+  _id: string
+  date: Dayjs
+  direction: TRANSACTION_DIRECTION
+  volume: number
+  commission: number
+  transactionSet: string
+}
 
 export default function Page() {
   const router = useRouter()
@@ -94,7 +106,7 @@ export default function Page() {
       return []
     }
     return transactionSets
-      .map((transactionSet, index) => {
+      .map((transactionSet: any, index) => {
         const rowData: {
           identifier: string
           name?: string
@@ -141,6 +153,8 @@ export default function Page() {
         rowData.totalRateOfReturn = totalRateOfReturn
         rowData.totalAnnualizedRateOfReturn = totalAnnualizedRateOfReturn
         rowData.totalReturn = totalReturn
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         rowData.startDate = transactionsList[index][0].date
         return rowData
       })
