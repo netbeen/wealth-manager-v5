@@ -8,6 +8,11 @@ import {
   findOrCreateFundTransactionSet,
   FundTransactionSetStatus,
 } from '@/utils/fundTransacationSet'
+import { calcVolume, DateSplitRatio } from 'fund-tools'
+import dayjs from 'dayjs'
+import { getFundData } from '@/utils/fund'
+import { Operation } from 'fund-tools/src/return'
+import almostEqual from 'almost-equal'
 
 export type FundTransaction = PrismaFundTransaction
 
@@ -33,26 +38,35 @@ export const createFundTransaction = async ({
     team,
     shouldExist: direction === FundTransactionDirection.SELL,
   })
-  const createResult = await prismaClient.fundTransaction.create({
-    data: {
-      fundTransactionSetId: fundTransactionSet.id,
-      date,
-      direction,
-      volume,
-      commission,
-    },
-  })
   if (direction === FundTransactionDirection.SELL) {
     // 检测是否已经清仓
-    const fundTransactions = await getFundTransactions(fundTransactionSet.id)
-    const totalVolume = fundTransactions.reduce((accumulator, item) => {
-      if (item.direction === FundTransactionDirection.BUY) {
-        return accumulator + item.volume
-      } else {
-        return accumulator - item.volume
-      }
-    }, 0)
-    if (totalVolume === 0) {
+    const existFundTransactions = await getFundTransactions(
+      fundTransactionSet.id
+    )
+    const operationsForVolumeCheck = [
+      ...existFundTransactions.map((fundTransaction) => ({
+        date: dayjs(fundTransaction.date),
+        direction: fundTransaction.direction,
+        volume: fundTransaction.volume,
+        commission: fundTransaction.commission,
+      })),
+      {
+        date: dayjs(date),
+        direction,
+        volume,
+        commission,
+      },
+    ] as Operation[]
+    const splits = (await getFundData(fundId, 'split')).data as DateSplitRatio[]
+    const totalVolume = calcVolume(splits, operationsForVolumeCheck)
+    if (
+      almostEqual(
+        totalVolume,
+        0,
+        almostEqual.FLT_EPSILON,
+        almostEqual.FLT_EPSILON
+      )
+    ) {
       await prismaClient.fundTransactionSet.update({
         where: {
           id: fundTransactionSet.id,
@@ -63,7 +77,15 @@ export const createFundTransaction = async ({
       })
     }
   }
-  return createResult
+  return await prismaClient.fundTransaction.create({
+    data: {
+      fundTransactionSetId: fundTransactionSet.id,
+      date,
+      direction,
+      volume,
+      commission,
+    },
+  })
 }
 
 export const getFundTransactions = async (fundTransactionSetId: string) => {

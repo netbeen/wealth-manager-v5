@@ -1,4 +1,4 @@
-import transactionsets0704 from './transactionsets0704.json'
+import transactionSets0704 from './transactionSets0704.json'
 import transactions0704 from './transactions0704.json'
 import {
   createFundTransaction,
@@ -20,9 +20,9 @@ export const migrateFromV4ToV5 = async () => {
     return new Date(a.date).valueOf() - new Date(b.date).valueOf()
   })
 
-  for (const v4Transaction of sortedTransactions) {
+  for (const [index, v4Transaction] of sortedTransactions.entries()) {
     // 遍历交易单
-    const v4TransactionSet = transactionsets0704.find(
+    const v4TransactionSet = transactionSets0704.find(
       (item) => item._id.$oid === v4Transaction.transactionSet
     )
     if (!v4TransactionSet) {
@@ -34,14 +34,10 @@ export const migrateFromV4ToV5 = async () => {
       // 忽略非yy团队的交易单
       continue
     }
-    // if (
-    //   currentV4TransactionSetId !== null &&
-    //   currentV4TransactionSetId !== v4TransactionSet._id.$oid
-    // ) {
-    //   continue
-    // }
-    // currentV4TransactionSetId = v4TransactionSet._id.$oid
-    console.log(v4Transaction)
+    console.log(
+      `=== [${index}/${sortedTransactions.length}] Going to handle transaction:`,
+      v4Transaction
+    )
 
     await createFundTransaction({
       fundId: v4TransactionSet.target,
@@ -54,5 +50,35 @@ export const migrateFromV4ToV5 = async () => {
       volume: v4Transaction.volume,
       commission: v4Transaction.commission,
     })
+
+    console.log('Successfully migrated:', v4Transaction._id.$oid)
   }
+}
+
+export const migrateFailedTransaction = async () => {
+  const v4TransactionId = '61ab240eb2ec67e10aa427c4'
+  const team = await getTeamById(yyV5TeamId)
+  const v4Transaction = transactions0704.find(
+    (item) => item._id.$oid === v4TransactionId
+  )
+  if (!v4Transaction) {
+    throw new Error()
+  }
+  const v4TransactionSet = transactionSets0704.find(
+    (item) => item._id.$oid === v4Transaction.transactionSet
+  )
+  if (!v4TransactionSet) {
+    throw new Error()
+  }
+  await createFundTransaction({
+    fundId: v4TransactionSet.target,
+    team,
+    date: new Date(v4Transaction.date),
+    direction:
+      v4Transaction.direction === 'BUY'
+        ? FundTransactionDirection.BUY
+        : FundTransactionDirection.SELL,
+    volume: v4Transaction.volume,
+    commission: v4Transaction.commission,
+  })
 }
