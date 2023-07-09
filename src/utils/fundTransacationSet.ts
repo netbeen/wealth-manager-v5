@@ -41,3 +41,24 @@ export const findOrCreateFundTransactionSet = async ({
     },
   })
 }
+
+export const getHoldingTransactionSets = async (
+  team: Team
+): Promise<FundTransactionSet[]> => {
+  return await prismaClient.fundTransactionSet.findMany({
+    where: {
+      teamId: team.id,
+      status: FundTransactionSetStatus.HOLDING,
+    },
+  })
+}
+
+export const getTransactionSetById = async (
+  id: string
+): Promise<FundTransactionSet> => {
+  return await prismaClient.fundTransactionSet.findUniqueOrThrow({
+    where: {
+      id,
+    },
+  })
+}

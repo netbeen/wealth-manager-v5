@@ -10,7 +10,7 @@ import {
 } from '@/utils/fundTransacationSet'
 import { calcVolume, DateSplitRatio } from 'fund-tools'
 import dayjs from 'dayjs'
-import { getFundData } from '@/utils/fund'
+import { AllowedAttribute, getFundData } from '@/utils/fund'
 import { Operation } from 'fund-tools/src/return'
 import almostEqual from 'almost-equal'
 
@@ -57,7 +57,8 @@ export const createFundTransaction = async ({
         commission,
       },
     ] as Operation[]
-    const splits = (await getFundData(fundId, 'split')).data as DateSplitRatio[]
+    const splits = (await getFundData(fundId, AllowedAttribute.split))
+      .data as DateSplitRatio[]
     const totalVolume = calcVolume(splits, operationsForVolumeCheck)
     if (
       almostEqual(

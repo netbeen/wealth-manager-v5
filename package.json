@@ -23,6 +23,8 @@
     "@vercel/kv": "^0.2.2",
     "@vercel/postgres": "^0.4.0",
     "almost-equal": "^1.1.0",
+    "ali-react-table": "^2.6.1",
+    "styled-components": "^6.0.3",
     "ahooks": "^3.7.8",
     "antd": "^5.6.4",
     "antd-mobile": "^5.31.1",
