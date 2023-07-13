@@ -6,7 +6,7 @@
 //   fetchTransactionSetsByStatus,
 // } from '@/services/transactionSet'
 import { useAsyncEffect, useRequest } from 'ahooks'
-import { Loading, Tabs } from 'antd-mobile'
+import { Loading } from 'antd-mobile'
 import {
   Axis,
   Chart,
@@ -26,13 +26,10 @@ import {
   FundBasicInfoType,
   FundDividendType,
   FundPriceType,
-  fundSecondaryTabData,
   FundSpitType,
 } from '@/utils/UICommon'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 import { Overview } from '@/components/Overview'
-
-const TabPane = Tabs.Tab
 
 const restChartProps = {
   interactions: ['tooltip', 'element-active'],
@@ -56,8 +53,6 @@ interface TransactionType {
 }
 
 export default function Page() {
-  const router = useRouter()
-
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [fundBasicInfoList, setFundBasicInfoList] = useState<
     Array<FundBasicInfoType>
@@ -316,27 +311,9 @@ export default function Page() {
   }, [chartData])
 
   return (
-    <Fragment>
-      <Tabs
-        className={'layoutStyles.mainContentTab'}
-        onChange={(key) => {
-          router.push(
-            fundSecondaryTabData.find((item) => item.value === key)?.url ?? ''
-          )
-        }}
-        activeKey={'metrics'}
-      >
-        {fundSecondaryTabData.map((item) => (
-          <TabPane title={item.label} key={item.value}>
-            {item.value === 'metrics' && (
-              <div>
-                {overviewContent}
-                {mainContent}
-              </div>
-            )}
-          </TabPane>
-        ))}
-      </Tabs>
-    </Fragment>
+    <div>
+      {overviewContent}
+      {mainContent}
+    </div>
   )
 }
