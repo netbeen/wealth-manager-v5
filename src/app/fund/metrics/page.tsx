@@ -1,10 +1,5 @@
 'use client'
 
-// import { TransactionType, batchFetchTransaction } from '@/services/transaction'
-// import {
-//   TransactionSetStatus,
-//   fetchTransactionSetsByStatus,
-// } from '@/services/transactionSet'
 import { useAsyncEffect, useRequest } from 'ahooks'
 import { Loading } from 'antd-mobile'
 import {
@@ -18,18 +13,11 @@ import {
 } from 'bizcharts'
 import dayjs, { Dayjs } from 'dayjs'
 import { calcReturn, sliceBetween } from 'fund-tools'
-import { Fragment, useMemo, useState } from 'react'
-import {
-  COLOR,
-  formatToCurrency,
-  formatToPercentage,
-  FundBasicInfoType,
-  FundDividendType,
-  FundPriceType,
-  FundSpitType,
-} from '@/utils/UICommon'
-// import { useRouter } from 'next/navigation'
+import { useMemo, useState } from 'react'
+import { COLOR, formatToCurrency, formatToPercentage } from '@/utils/UICommon'
 import { Overview } from '@/components/Overview'
+import { FundTransactionSet } from '@/utils/fundTransacationSet'
+import { BasicInfoUnitPricesDividendsSplitsTransactionsData } from '@/app/api/fund/transactionSet/[transactionSetId]/basicInfoUnitPricesDividendsSplitsTransactions/route'
 
 const restChartProps = {
   interactions: ['tooltip', 'element-active'],
@@ -38,44 +26,17 @@ const restChartProps = {
   autoFit: true,
 }
 
-enum TRANSACTION_DIRECTION {
-  BUY = 'BUY',
-  SELL = 'SELL',
-}
-
-interface TransactionType {
-  _id: string
-  date: Dayjs
-  direction: TRANSACTION_DIRECTION
-  volume: number
-  commission: number
-  transactionSet: string
-}
-
 export default function Page() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [fundBasicInfoList, setFundBasicInfoList] = useState<
-    Array<FundBasicInfoType>
-  >([])
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [unitPricesList, setUnitPricesList] = useState<
-    Array<Array<FundPriceType>>
-  >([])
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [dividendsList, setDividendsList] = useState<
-    Array<Array<FundDividendType>>
-  >([])
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [splitsList, setSplitsList] = useState<Array<Array<FundSpitType>>>([])
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [transactionsList, setTransactionsList] = useState<
-    Array<Array<TransactionType>>
+  const [fundData, setFundData] = useState<
+    BasicInfoUnitPricesDividendsSplitsTransactionsData[]
   >([])
 
   const { data: transactionSets } = useRequest(
     async () => {
-      return []
-      // return await fetchTransactionSetsByStatus(TransactionSetStatus.Active)
+      const holdingTransactionSets = await fetch(
+        `/api/fund/transactionSet?status=HOLDING`
+      )
+      return (await holdingTransactionSets.json()).data as FundTransactionSet[]
     },
     { refreshDeps: [] }
   )
@@ -84,50 +45,60 @@ export default function Page() {
     if (!Array.isArray(transactionSets) || transactionSets.length === 0) {
       return
     }
-    // const basicInfoUnitPriceSplitDividendResult =
-    // await fetchBasicInfoUnitPriceSplitDividendByIdentifier(
-    //   transactionSets.map((transactionSet) => transactionSet.target)
-    // )
-    // setFundBasicInfoList(basicInfoUnitPriceSplitDividendResult.basicInfos)
-    // setUnitPricesList(basicInfoUnitPriceSplitDividendResult.unitPrices)
-    // setDividendsList(basicInfoUnitPriceSplitDividendResult.dividends)
-    // setSplitsList(basicInfoUnitPriceSplitDividendResult.splits)
-    // const transactionResult = await batchFetchTransaction(transactionSets)
-    // setTransactionsList(transactionResult)
+    const basicInfoUnitPricesDividendsSplitsTransactions = await Promise.all(
+      transactionSets.map((transactionSet) =>
+        fetch(
+          `/api/fund/transactionSet/${transactionSet.id}/basicInfoUnitPricesDividendsSplitsTransactions`
+        )
+      )
+    )
+    const remoteFundData = []
+    for (const item of basicInfoUnitPricesDividendsSplitsTransactions) {
+      // 传输过程中的 Date 和 Dayjs 类型被转换为了 string，需要转回去
+      const formattedData: BasicInfoUnitPricesDividendsSplitsTransactionsData =
+        (await item.json()).data
+      formattedData.unitPrices.data.forEach((unitPrice) => {
+        unitPrice.date = dayjs(unitPrice.date)
+      })
+      formattedData.splits.data.forEach((split) => {
+        split.date = dayjs(split.date)
+      })
+      formattedData.dividends.data.forEach((divident) => {
+        divident.date = dayjs(divident.date)
+      })
+      formattedData.transactions.forEach((transaction) => {
+        transaction.date = new Date(transaction.date)
+      })
+
+      remoteFundData.push(formattedData)
+    }
+    setFundData(remoteFundData)
   }, [transactionSets])
 
   const tableData = useMemo(() => {
-    if (!Array.isArray(transactionSets)) {
+    if (!Array.isArray(transactionSets) || fundData.length === 0) {
       return []
     }
     return transactionSets
-      .map((transactionSet: any, index) => {
+      .map((transactionSet, index) => {
         const rowData: {
           identifier: string
           name?: string
           positionValue: null | number
           totalRateOfReturn: null | number
           totalAnnualizedRateOfReturn: null | number
-          transactionSet: string
+          // transactionSet: string
           totalReturn: number | null
           startDate: Dayjs | null
         } = {
-          identifier: transactionSet.target,
-          name: fundBasicInfoList[index]?.name,
+          identifier: transactionSet.fundId,
+          name: fundData[index].basicInfo.data.name,
           positionValue: null,
           totalRateOfReturn: null,
           totalAnnualizedRateOfReturn: null,
-          transactionSet: transactionSet._id,
+          // transactionSet: transactionSet._id,
           totalReturn: null,
           startDate: null,
-        }
-        if (
-          !Array.isArray(unitPricesList[index]) ||
-          !Array.isArray(dividendsList[index]) ||
-          !Array.isArray(splitsList[index]) ||
-          !Array.isArray(transactionsList[index])
-        ) {
-          return rowData
         }
         const {
           positionValue,
@@ -136,21 +107,22 @@ export default function Page() {
           totalAnnualizedRateOfReturn,
         } = calcReturn(
           sliceBetween(
-            unitPricesList[index],
-            transactionsList[index][0].date,
+            fundData[index].unitPrices.data,
+            fundData[index].transactions[0].date,
             dayjs()
           ),
-          dividendsList[index],
-          splitsList[index],
-          transactionsList[index]
+          [],
+          [],
+          fundData[index].transactions.map((item) => ({
+            ...item,
+            date: dayjs(item.date),
+          }))
         )
         rowData.positionValue = positionValue
         rowData.totalRateOfReturn = totalRateOfReturn
         rowData.totalAnnualizedRateOfReturn = totalAnnualizedRateOfReturn
         rowData.totalReturn = totalReturn
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-        rowData.startDate = transactionsList[index][0].date
+        rowData.startDate = fundData[index].transactions[0].date
         return rowData
       })
       .sort((a, b) => {
@@ -161,21 +133,10 @@ export default function Page() {
           return 1
         }
       })
-  }, [
-    transactionSets,
-    fundBasicInfoList,
-    unitPricesList,
-    dividendsList,
-    splitsList,
-    transactionsList,
-  ])
+  }, [fundData, transactionSets])
 
   const { chartData, overviewData } = useMemo(() => {
-    if (
-      !Array.isArray(tableData) ||
-      !tableData[0] ||
-      typeof tableData[0].positionValue !== 'number'
-    ) {
+    if (!tableData[0] || typeof tableData[0].positionValue !== 'number') {
       return {
         chartData: [],
       }

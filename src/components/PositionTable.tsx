@@ -14,7 +14,6 @@ export const PositionTable: React.FC<{
   const [fundData, setFundData] = useState<
     BasicInfoUnitPricesDividendsSplitsTransactionsData[]
   >([])
-  console.log('fundData', fundData)
 
   useEffect(() => {
     Promise.all(
