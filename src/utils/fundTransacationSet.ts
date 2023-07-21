@@ -9,6 +9,12 @@ export type FundTransactionSet = PrismaFundTransactionSet
 
 export const FundTransactionSetStatus = PrismaFundTransactionSetStatus
 
+export const isFundTransactionSetStatus = (
+  input: string
+): input is PrismaFundTransactionSetStatus => {
+  return Object.keys(FundTransactionSetStatus).includes(input)
+}
+
 export const findOrCreateFundTransactionSet = async ({
   fundId,
   team,
@@ -42,13 +48,14 @@ export const findOrCreateFundTransactionSet = async ({
   })
 }
 
-export const getHoldingTransactionSets = async (
-  team: Team
+export const getTransactionSets = async (
+  team: Team,
+  status: PrismaFundTransactionSetStatus
 ): Promise<FundTransactionSet[]> => {
   return await prismaClient.fundTransactionSet.findMany({
     where: {
       teamId: team.id,
-      status: FundTransactionSetStatus.HOLDING,
+      status,
     },
   })
 }

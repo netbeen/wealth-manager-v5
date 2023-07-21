@@ -2,7 +2,10 @@ import { NextRequest, NextResponse } from 'next/server'
 import { usingMiddleware } from '@/utils/serverCommon'
 import { User } from '@/utils/user'
 import { Team } from '@/utils/team'
-import { getHoldingTransactionSets } from '@/utils/fundTransacationSet'
+import {
+  getTransactionSets,
+  isFundTransactionSetStatus,
+} from '@/utils/fundTransacationSet'
 
 async function handler(
   req: NextRequest,
@@ -10,8 +13,12 @@ async function handler(
   user?: User,
   team?: Team
 ) {
+  const status = new URL(req.url).searchParams.get('status')
+  if (!status || !isFundTransactionSetStatus(status)) {
+    throw new Error(`status 非法, status=${status}`)
+  }
   return NextResponse.json({
-    data: await getHoldingTransactionSets(team as Team),
+    data: await getTransactionSets(team as Team, status),
   })
 }
 
