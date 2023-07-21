@@ -86,8 +86,6 @@ export default function Page() {
           name?: string
           positionValue: null | number
           totalRateOfReturn: null | number
-          totalAnnualizedRateOfReturn: null | number
-          // transactionSet: string
           totalReturn: number | null
           startDate: Dayjs | null
         } = {
@@ -95,20 +93,13 @@ export default function Page() {
           name: fundData[index].basicInfo.data.name,
           positionValue: null,
           totalRateOfReturn: null,
-          totalAnnualizedRateOfReturn: null,
-          // transactionSet: transactionSet._id,
           totalReturn: null,
           startDate: null,
         }
-        const {
-          positionValue,
-          totalReturn,
-          totalRateOfReturn,
-          totalAnnualizedRateOfReturn,
-        } = calcReturn(
+        const { positionValue, totalReturn, totalRateOfReturn } = calcReturn(
           sliceBetween(
             fundData[index].unitPrices.data,
-            fundData[index].transactions[0].date,
+            dayjs(fundData[index].transactions[0].date),
             dayjs()
           ),
           [],
@@ -120,9 +111,8 @@ export default function Page() {
         )
         rowData.positionValue = positionValue
         rowData.totalRateOfReturn = totalRateOfReturn
-        rowData.totalAnnualizedRateOfReturn = totalAnnualizedRateOfReturn
         rowData.totalReturn = totalReturn
-        rowData.startDate = fundData[index].transactions[0].date
+        rowData.startDate = dayjs(fundData[index].transactions[0].date)
         return rowData
       })
       .sort((a, b) => {
