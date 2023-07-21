@@ -18,7 +18,7 @@ export default function Page() {
     { refreshDeps: [] }
   )
 
-  const mainContent = useMemo(
+  return useMemo(
     () => (
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <AddTransactionButton />
@@ -29,6 +29,4 @@ export default function Page() {
     ),
     [transactionSets]
   )
-
-  return mainContent
 }
