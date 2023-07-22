@@ -90,9 +90,11 @@ export const createFundTransaction = async ({
 }
 
 export const getFundTransactions = async (fundTransactionSetId: string) => {
-  return await prismaClient.fundTransaction.findMany({
-    where: {
-      fundTransactionSetId,
-    },
-  })
+  return (
+    await prismaClient.fundTransaction.findMany({
+      where: {
+        fundTransactionSetId,
+      },
+    })
+  ).sort((a, b) => a.date.valueOf() - b.date.valueOf())
 }

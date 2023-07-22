@@ -9,8 +9,8 @@ import { calcReturn, lastOfArray, sliceBetween } from 'fund-tools'
 
 export const PositionTable: React.FC<{
   transactionSets: FundTransactionSet[]
-}> = ({ transactionSets }) => {
-  const transactionSetActive = !location.pathname.includes('History')
+  isCleared: boolean
+}> = ({ transactionSets, isCleared }) => {
   const [fundData, setFundData] = useState<
     BasicInfoUnitPricesDividendsSplitsTransactionsData[]
   >([])
@@ -34,8 +34,8 @@ export const PositionTable: React.FC<{
         formattedData.splits.data.forEach((split) => {
           split.date = dayjs(split.date)
         })
-        formattedData.dividends.data.forEach((divident) => {
-          divident.date = dayjs(divident.date)
+        formattedData.dividends.data.forEach((dividend) => {
+          dividend.date = dayjs(dividend.date)
         })
         formattedData.transactions.forEach((transaction) => {
           transaction.date = new Date(transaction.date)
@@ -70,7 +70,7 @@ export const PositionTable: React.FC<{
           </div>
         ),
       },
-      transactionSetActive
+      !isCleared
         ? {
             code: 'positionValue',
             name: <span>市值</span>,
@@ -173,50 +173,55 @@ export const PositionTable: React.FC<{
           totalReturn: null,
           startDate: null,
         }
-        const {
-          positionValue,
-          totalReturn,
-          totalRateOfReturn,
-          totalAnnualizedRateOfReturn,
-        } = calcReturn(
-          sliceBetween(
-            fundDataItem.unitPrices.data,
-            dayjs(fundDataItem.transactions[0].date),
-            lastOfArray(fundDataItem.unitPrices.data).date
-          ),
-          sliceBetween(
-            fundDataItem.dividends.data,
-            dayjs(fundDataItem.transactions[0].date),
-            lastOfArray(fundDataItem.unitPrices.data).date
-          ),
-          sliceBetween(
-            fundDataItem.splits.data,
-            dayjs(fundDataItem.transactions[0].date),
-            lastOfArray(fundDataItem.unitPrices.data).date
-          ),
-          sliceBetween(
-            fundDataItem.transactions.map((transaction) => ({
-              date: dayjs(transaction.date),
-              volume: transaction.volume,
-              commission: transaction.commission,
-              direction: transaction.direction,
-            })),
-            dayjs(fundDataItem.transactions[0].date),
-            lastOfArray(fundDataItem.unitPrices.data).date
+        try {
+          const {
+            positionValue,
+            totalReturn,
+            totalRateOfReturn,
+            totalAnnualizedRateOfReturn,
+          } = calcReturn(
+            sliceBetween(
+              fundDataItem.unitPrices.data,
+              dayjs(fundDataItem.transactions[0].date),
+              lastOfArray(fundDataItem.unitPrices.data).date
+            ),
+            sliceBetween(
+              fundDataItem.dividends.data,
+              dayjs(fundDataItem.transactions[0].date),
+              lastOfArray(fundDataItem.unitPrices.data).date
+            ),
+            sliceBetween(
+              fundDataItem.splits.data,
+              dayjs(fundDataItem.transactions[0].date),
+              lastOfArray(fundDataItem.unitPrices.data).date
+            ),
+            sliceBetween(
+              fundDataItem.transactions.map((transaction) => ({
+                date: dayjs(transaction.date),
+                volume: transaction.volume,
+                commission: transaction.commission,
+                direction: transaction.direction,
+              })),
+              dayjs(fundDataItem.transactions[0].date),
+              lastOfArray(fundDataItem.unitPrices.data).date
+            )
           )
-        )
-        rowData.positionValue = positionValue
-        rowData.totalRateOfReturn = totalRateOfReturn
-        rowData.totalAnnualizedRateOfReturn = totalAnnualizedRateOfReturn
-        rowData.totalReturn = totalReturn
-        rowData.startDate = dayjs(fundDataItem.transactions[0].date)
+          rowData.positionValue = positionValue
+          rowData.totalRateOfReturn = totalRateOfReturn
+          rowData.totalAnnualizedRateOfReturn = totalAnnualizedRateOfReturn
+          rowData.totalReturn = totalReturn
+          rowData.startDate = dayjs(fundDataItem.transactions[0].date)
+        } catch (e) {
+          // TODO: check 博时黄金ETFI [000930]'s error
+          console.warn(e)
+        }
         return rowData
       })
       .sort((a, b) => {
-        if (transactionSetActive && a.positionValue && b.positionValue) {
+        if (!isCleared && a.positionValue && b.positionValue) {
           // 按照市值从高到低排序
           return b.positionValue - a.positionValue
-        } else if (!transactionSetActive && a.startDate && b.startDate) {
+        } else if (isCleared && a.startDate && b.startDate) {
           return b.startDate.isBefore(a.startDate) ? -1 : 1
         } else {
           return 1

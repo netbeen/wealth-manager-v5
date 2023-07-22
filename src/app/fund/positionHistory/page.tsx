@@ -4,14 +4,13 @@ import { useRequest } from 'ahooks'
 import { useMemo } from 'react'
 import { FundTransactionSet } from '@/utils/fundTransacationSet'
 import { PositionTable } from '@/components/PositionTable'
-import { AddTransactionButton } from '@/components/AddTransactionButton'
 
 export default function Page() {
   // const router = useRouter()
   const { data: transactionSets, loading: transactionSetsLoading } = useRequest(
     async () => {
       const holdingTransactionSets = await fetch(
-        `/api/fund/transactionSet?status=HOLDING`
+        `/api/fund/transactionSet?status=CLEARED`
       )
       return (await holdingTransactionSets.json()).data as FundTransactionSet[]
     },
@@ -21,11 +20,10 @@ export default function Page() {
   return useMemo(
     () => (
       <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <AddTransactionButton />
         {!transactionSetsLoading && (
           <PositionTable
             transactionSets={transactionSets ?? []}
-            isCleared={false}
+            isCleared={true}
           />
         )}
       </div>
