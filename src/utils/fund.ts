@@ -35,10 +35,10 @@ const method: Record<AllowedAttribute, (identifier: string) => Promise<any>> = {
 
 const cacheExpireTime: Record<AllowedAttribute, number> = {
   [AllowedAttribute.basicInfo]: 3600 * 24 * 7,
-  [AllowedAttribute.unitPrice]: 60,
-  [AllowedAttribute.accumulatedPrice]: 60,
-  [AllowedAttribute.split]: 60,
-  [AllowedAttribute.dividend]: 60,
+  [AllowedAttribute.unitPrice]: 60 * 30,
+  [AllowedAttribute.accumulatedPrice]: 60 * 30,
+  [AllowedAttribute.split]: 60 * 30,
+  [AllowedAttribute.dividend]: 60 * 30,
 }
 
 export type DataType = DatePrice | DateDividend | DateSplitRatio | BasicInfo
