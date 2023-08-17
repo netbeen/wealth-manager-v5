@@ -6,11 +6,25 @@ import { COLOR, formatToCurrency, formatToPercentage } from '@/utils/UICommon'
 import { BasicInfoUnitPricesDividendsSplitsTransactionsData } from '@/app/api/fund/transactionSet/[transactionSetId]/basicInfoUnitPricesDividendsSplitsTransactions/route'
 import dayjs, { Dayjs } from 'dayjs'
 import { calcReturn, lastOfArray, sliceBetween } from 'fund-tools'
+import { useRouter } from 'next/navigation'
+
+interface FundPositionTableType {
+  identifier: string
+  name?: string
+  positionValue: null | number
+  totalRateOfReturn: null | number
+  totalAnnualizedRateOfReturn: null | number
+  transactionSetId: string
+  totalReturn: number | null
+  startDate: Dayjs | null
+}
 
 export const PositionTable: React.FC<{
   transactionSets: FundTransactionSet[]
   isCleared: boolean
 }> = ({ transactionSets, isCleared }) => {
+  const router = useRouter()
+
   const [fundData, setFundData] = useState<
     BasicInfoUnitPricesDividendsSplitsTransactionsData[]
   >([])
@@ -59,11 +73,11 @@ export const PositionTable: React.FC<{
         name: <span>基金名称</span>,
         width: 150,
         align: 'left',
-        render: (value: any, record: any) => (
+        render: (value, record: FundPositionTableType) => (
           <div
             style={{ cursor: 'pointer' }}
             onClick={() => {
-              // history.push(`/fund/transactionSet/${record.transactionSet}`)
+              router.push(`/fund/transactionSet/${record.transactionSetId}`)
             }}
           >
             <div>{`${record.name ?? 'Loading...'} [${record.identifier}]`}</div>
@@ -154,22 +168,13 @@ export const PositionTable: React.FC<{
   const tableData = useMemo(() => {
     return fundData
       .map((fundDataItem) => {
-        const rowData: {
-          identifier: string
-          name?: string
-          positionValue: null | number
-          totalRateOfReturn: null | number
-          totalAnnualizedRateOfReturn: null | number
-          transactionSet: string
-          totalReturn: number | null
-          startDate: Dayjs | null
-        } = {
+        const rowData: FundPositionTableType = {
           identifier: fundDataItem.basicInfo.data.identifier,
           name: fundDataItem.basicInfo.data.name,
           positionValue: null,
           totalRateOfReturn: null,
           totalAnnualizedRateOfReturn: null,
-          transactionSet: '',
+          transactionSetId: fundDataItem.transactions[0].fundTransactionSetId,
           totalReturn: null,
           startDate: null,
         }

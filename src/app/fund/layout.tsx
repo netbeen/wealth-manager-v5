@@ -12,6 +12,13 @@ export default function RootLayout({
   const router = useRouter()
   const pathname = usePathname()
 
+  const currentActiveKey = fundSecondaryTabData.find(
+    (item) => item.url === pathname
+  )?.value
+
+  if (!currentActiveKey) {
+    return children
+  }
   return (
     <Tabs
       // className={layoutStyles.mainContentTab}
@@ -20,9 +27,7 @@ export default function RootLayout({
           fundSecondaryTabData.find((item) => item.value === key)?.url ?? ''
         )
       }}
-      defaultActiveKey={
-        fundSecondaryTabData.find((item) => item.url === pathname)?.value ?? ''
-      }
+      defaultActiveKey={currentActiveKey ?? ''}
     >
       {fundSecondaryTabData.map((item) => (
         <Tabs.Tab title={item.label} key={item.value}>
