@@ -120,8 +120,11 @@ export default function Page() {
             item.basicInfo.data.identifier === targetTransactionSet.fundId
         )
 
-        const targetBasicInfo = targetFundData?.basicInfo.data
-        const targetUnitPrices = targetFundData?.unitPrices.data
+        if (!targetFundData) {
+          throw new Error('!targetFundData')
+        }
+        const targetBasicInfo = targetFundData.basicInfo.data
+        const targetUnitPrices = targetFundData.unitPrices.data
         const targetUnitPrice =
           targetUnitPrices.find((item) => item.date.isSame(transaction.date))
             ?.price ?? 0
@@ -159,12 +162,13 @@ export default function Page() {
             },
             {
               code: 'date',
-              name: (
-                <div>
-                  <div>交易方向</div>
-                  <div>交易金额</div>
-                </div>
-              ),
+              // name: (
+              //   <div>
+              //     <div>交易方向</div>
+              //     <div>交易金额</div>
+              //   </div>
+              // ),
+              name: '交易方向/交易金额',
               width: 100,
               align: 'right',
               render: (_value, record) => (
