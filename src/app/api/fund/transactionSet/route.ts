@@ -14,7 +14,12 @@ async function handler(
   team?: Team
 ) {
   const status = new URL(req.url).searchParams.get('status')
-  if (!status || !isFundTransactionSetStatus(status)) {
+  if (!status) {
+    return NextResponse.json({
+      data: await getTransactionSets(team as Team),
+    })
+  }
+  if (!isFundTransactionSetStatus(status)) {
     throw new Error(`status 非法, status=${status}`)
   }
   return NextResponse.json({

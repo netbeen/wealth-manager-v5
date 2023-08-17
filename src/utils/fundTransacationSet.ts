@@ -50,7 +50,7 @@ export const findOrCreateFundTransactionSet = async ({
 
 export const getTransactionSets = async (
   team: Team,
-  status: PrismaFundTransactionSetStatus
+  status?: PrismaFundTransactionSetStatus
 ): Promise<FundTransactionSet[]> => {
   return await prismaClient.fundTransactionSet.findMany({
     where: {
